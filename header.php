@@ -15,6 +15,12 @@
         <?php wp_head(); ?>
     </head>
     <body class="<?php body_class(); ?>" >
-        
+        <div class=" mdl-layout mdl-js-layout  mdl-layout--fixed-header">
+            <?php 
+            wp_nav_menu( array(
+                'menu_id' =>  'aftv-header-menu'
+            ));
+            ?>
+        </div>
     </body>
 </html>

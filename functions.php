@@ -64,3 +64,4 @@ if (!function_exists('aftv_theme_setup')) {
     //Load Aftv theme setup after Wordpress theme setup
     add_action('after_theme_setup', 'aftv_theme_setup');
 }
+
