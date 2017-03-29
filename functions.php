@@ -37,11 +37,12 @@ define( 'JS', THEME_ROOT.'/js' );
  * ------------------------------------------------------
  */
 
-if( !function_exists('aftv_theme_setup') ){
+if( !function_exists( 'aftv_theme_setup' ) ){
+    
     function aftv_theme_setup(){
         // Make the theme available for translation
         $lang_dir = THEME_ROOT.'/languages';
-        load_textdomain('afriqtv', $lang_dir);
+        load_textdomain( 'afriqtv', $lang_dir );
         
         
         // Enable support for Post Formats
@@ -52,5 +53,14 @@ if( !function_exists('aftv_theme_setup') ){
             'audio',
         );
         add_theme_support( 'post-format', $aftv_supported_format );
+        
+        //  Register Navigation Menus
+        register_nav_menus( array(
+            'aftv-header-menu' => __( 'Menu principal', 'afriqtv' )
+        ));
     }
+    
+    //Load Aftv theme setup after Wordpress theme setup
+    add_action( 'after_theme_setup', 'aftv_theme_setup');
+    
 }
