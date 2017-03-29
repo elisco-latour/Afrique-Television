@@ -44,5 +44,13 @@ if( !function_exists('aftv_theme_setup') ){
         load_textdomain('afriqtv', $lang_dir);
         
         
+        // Enable support for Post Formats
+        $aftv_supported_format = array (
+            'image',
+            'video',
+            'gallery',
+            'audio',
+        );
+        add_theme_support( 'post-format', $aftv_supported_format );
     }
 }
