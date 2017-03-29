@@ -31,6 +31,9 @@ define('CSS', THEME_ROOT . '/css');
 define('JS', THEME_ROOT . '/js');
 
 
+
+
+
 /* ------------------------------------------------------
  * 
  * 2 - THEME SETUP

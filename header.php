@@ -18,7 +18,7 @@
         <div class=" mdl-layout mdl-js-layout  mdl-layout--fixed-header">
             <?php 
             wp_nav_menu( array(
-                'menu_id' =>  'aftv-header-menu'
+                'theme_location' =>  'aftv-header-menu'
             ));
             ?>
         </div>
