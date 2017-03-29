@@ -29,3 +29,20 @@ define( 'CSS', THEME_ROOT.'/css' );
 // A constant for the path of the theme default Javascript folder
 define( 'JS', THEME_ROOT.'/js' );
 
+
+/*------------------------------------------------------
+ * 
+ * 2 - THEME SETUP
+ * 
+ * ------------------------------------------------------
+ */
+
+if( !function_exists('aftv_theme_setup') ){
+    function aftv_theme_setup(){
+        // Make the theme available for translation
+        $lang_dir = THEME_ROOT.'/languages';
+        load_textdomain('afriqtv', $lang_dir);
+        
+        
+    }
+}
