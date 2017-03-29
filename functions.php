@@ -54,13 +54,10 @@ if( !function_exists( 'aftv_theme_setup' ) ){
         );
         add_theme_support( 'post-format', $aftv_supported_format );
         
-        //  Register Navigation Menus
+        // Register Navigation Menus
         register_nav_menus( array(
             'aftv-header-menu' => __( 'Menu principal', 'afriqtv' )
         ));
     }
-    
-    //Load Aftv theme setup after Wordpress theme setup
-    add_action( 'after_theme_setup', 'aftv_theme_setup');
     
 }
