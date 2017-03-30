@@ -16,10 +16,17 @@
     </head>
     <body class="<?php body_class(); ?>" >
         <div class=" mdl-layout mdl-js-layout  mdl-layout--fixed-header">
-            <?php 
-            wp_nav_menu( array(
-                'theme_location' =>  'aftv-header-menu'
-            ));
+            <?php
+            // Define AFTV top headr Menu Configuration
+            $aftv_menu_parameters = array(
+                'theme_location' => 'aftv-header-menu',
+                'container' => FALSE,
+                'menu_class' => 'mdl-navigation',
+                'items_wrap' => '<nav id="%1$s" class="%2$s">%3$s</nav>',
+                'echo' => FALSE
+                    //'walker' => new Aftv_Menu_Walker()
+            );
+            echo strip_tags(wp_nav_menu($aftv_menu_parameters), '<a><nav>');
             ?>
         </div>
     </body>
