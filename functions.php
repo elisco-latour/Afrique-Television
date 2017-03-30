@@ -68,3 +68,23 @@ if (!function_exists('aftv_theme_setup')) {
     add_action('after_setup_theme', 'aftv_theme_setup');
 }
 
+
+
+/* ------------------------------------------------------
+ * 
+ * 3 - UTILTIES
+ * 
+ * ------------------------------------------------------
+ */
+
+// Add a class to my Menu links.
+if ( !function_exists( 'aftv_add_menu_link_class' ) ) {
+    
+    $navClass= "mdl-navigation";
+    
+    function aftv_add_menu_link_class($navClass) {
+        return preg_replace('/<a/', '<a clas="mdl-navigation__link"', $navClass);
+    }
+
+    add_filter('wp_nav_menu', 'aftv_add_menu_link_class');
+}
