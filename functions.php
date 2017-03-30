@@ -70,6 +70,7 @@ if (!function_exists('aftv_theme_setup')) {
 
 
 
+
 /* ------------------------------------------------------
  * 
  * 3 - UTILTIES
@@ -88,3 +89,35 @@ if ( !function_exists( 'aftv_add_menu_link_class' ) ) {
 
     add_filter('wp_nav_menu', 'aftv_add_menu_link_class');
 }
+
+
+
+
+
+
+/* ------------------------------------------------------
+ * 
+ * 2 - THEME SCRIPT AND STYLES
+ * 
+ * ------------------------------------------------------
+ */
+if( ! function_exists('aftv_scripts')) {
+    function aftv_scripts() {
+        // Load Material Design Lite STYLESHEET
+        wp_enqueue_style( 'MDL_STYLE', 'https://code.getmdl.io/1.3.0/material.red-orange.min.css' );
+       
+        // Load Material Design Lite Fonts
+        wp_enqueue_style( 'MDL_FONTS', 'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' );
+        
+        //Load Material design Icons
+        wp_enqueue_style('MDL_ICONS', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+        
+        // Load the theme styleSheet 
+        wp_enqueue_style( 'MAIN_STYLE', get_stylesheet_uri()); 
+        
+        //Load Material Design Lite Javascript
+        wp_enqueue_script( 'MDL_JS', 'https://code.getmdl.io/1.3.0/material.min.js' );
+    }
+}
+add_action('wp_enqueue_scripts', 'aftv_scripts');
+
