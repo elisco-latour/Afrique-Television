@@ -92,10 +92,10 @@ if( ! function_exists('aftv_scripts')) {
         wp_enqueue_style( 'MAIN_STYLE', get_stylesheet_uri()); 
         
         //Load Material Design Lite Javascript
-        wp_enqueue_script( 'MDL_JS', 'https://code.getmdl.io/1.3.0/material.min.js' );
+        wp_enqueue_script( 'MDL_JS', 'https://code.getmdl.io/1.3.0/material.min.js',array(),1.0, TRUE );
         
         // Load The Tv player JS
-        //wp_enqueue_script( 'WEB-TV_JS', JS.'/aftv_web_tv.js' );
+        wp_enqueue_script( 'WEB-TV_JS', JS.'/aftv-web-tv.js', array(), 1.0, TRUE);
     }
 }
 add_action('wp_enqueue_scripts', 'aftv_scripts');
@@ -120,6 +120,3 @@ if ( !function_exists( 'aftv_add_menu_link_class' ) ) {
 
     add_filter('wp_nav_menu', 'aftv_add_menu_link_class');
 }
-
-
-//require get_template_directory() . '/inc/scripts.php';
