@@ -120,3 +120,6 @@ if ( !function_exists( 'aftv_add_menu_link_class' ) ) {
 
     add_filter('wp_nav_menu', 'aftv_add_menu_link_class');
 }
+
+
+require get_template_directory().'/inc/aftv-menu-walker.php';

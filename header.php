@@ -45,7 +45,7 @@
                     <!-- Navigation -->
                     <?php
                     // Define AFTV top headr Menu Configuration
-                    $aftv_menu_parameters = array(
+                    /*$aftv_menu_parameters = array(
                         'theme_location' => 'aftv-header-menu',
                         'container' => FALSE,
                         'menu_class' => 'mdl-navigation',
@@ -54,6 +54,20 @@
                             //'walker' => new Aftv_Menu_Walker()
                     );
                     echo strip_tags(wp_nav_menu($aftv_menu_parameters), '<a><nav>');
+                     * /
+                     * 
+                     */
+                    
+                    $aftv_menu_parameters = array(
+                        'theme_location' => "aftv-header-menu",
+                        'container' => 'nav',
+                        'items_wrap' => '%3$s',
+                        'container_class' => 'mdl-navigation',
+                        'walker' => new AFTV_walker()
+                    );
+                    if (has_nav_menu('aftv-header-menu') ){
+                        wp_nav_menu($aftv_menu_parameters);
+                    }
                     ?>
                 </div>
             </header>
