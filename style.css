@@ -135,7 +135,8 @@ body{
 
 
 .aftv-cat{
-    margin: 0px 8px;
+    margin: 0px;
+    margin-right: 16px;
 }
 
 article .aftv-cat{
@@ -462,7 +463,8 @@ a.article-link{
 }
 
 .aftv-post__title{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
 }
 
 .aftv-post__meta-data{
@@ -482,6 +484,15 @@ a.article-link{
     margin-bottom: 80px;
 }
 
+.aftv-single--posst-content h1,
+.aftv-single--posst-content h2,
+.aftv-single--posst-content h3,
+.aftv-single--posst-content h4,
+.aftv-single--posst-content h5,
+.aftv-single--posst-content h6 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
 /*===============================
  CATEGORIES PAGES
 ================================*/
