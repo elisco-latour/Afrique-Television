@@ -76,8 +76,8 @@ if (!function_exists('aftv_theme_setup')) {
             'admin-preview-callback' => '',
         );
         add_theme_support('custom-background', $defaults);
-
-
+        
+        
         // Register Navigation Menus
         register_nav_menus(array(
             'aftv-header-menu' => __('Menu principal', 'afriqtv'),
@@ -87,6 +87,23 @@ if (!function_exists('aftv_theme_setup')) {
 
     //Load Aftv theme setup after Wordpress theme setup
     add_action('after_setup_theme', 'aftv_theme_setup');
+}
+
+if (!function_exists('aftv_custom_logo_setup')) {
+
+    // Add custom logo support
+    function aftv_custom_logo_setup() {
+        $parameters = array(
+            'height' => 41,
+            'width' => 197,
+            'flex-height' => true,
+            'flex-width' => true,
+            'header-text' => array('site-title'),
+        );
+        add_theme_support('custom-logo', $parameters);
+    }
+
+    add_action('after_setup_theme', 'aftv_custom_logo_setup');
 }
 
 

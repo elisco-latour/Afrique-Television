@@ -19,8 +19,15 @@
                 <div class="mdl-layout__header-row aftv-header">
                     <!-- Title -->
                     <span class="mdl-layout-title">
-                          <!--<img class="aftv-logo" src="images/afrique_lok.png"/>-->
-                        AFRIQUE TELEVISION
+                        <?php 
+                        //echo get_bloginfo('name');
+                        if( has_custom_logo() ) {
+                            the_custom_logo();
+                        }
+                        else {
+                            echo get_bloginfo('name');
+                        }
+                        ?>
                     </span>
                     <div class="mdl-layout-spacer"></div>
                     <button  onclick="toggle_player()" id="toggle_player" class="aftv-live_tv mdl-button mdl-js-button">
