@@ -15,13 +15,7 @@
 
                             <div class="mdl-mega-footer__drop-down-section">
                                 <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                                <h1 class="mdl-mega-footer__heading">Features</h1>
-                                <ul class="mdl-mega-footer__link-list">
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Terms</a></li>
-                                    <li><a href="#">Partners</a></li>
-                                    <li><a href="#">Updates</a></li>
-                                </ul>
+                                <?php dynamic_sidebar('sidebar-2'); ?>
                             </div>
 
                             <div class="mdl-mega-footer__drop-down-section">

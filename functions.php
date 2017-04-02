@@ -166,6 +166,16 @@ function aftv_widgets_config() {
         'before_title' => '',
         'after_title' => ''
     ));
+
+    register_sidebar(array(
+        'name' => __('Footer Sidebar 1'),
+        'id' => 'sidebar-2',
+        'description' => __('Sidebar numero 1 pour le pied de page'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h1 class="mdl-mega-footer__heading">',
+        'after_title' => '</h1>'
+    ));
 }
 add_action('widgets_init', 'aftv_widgets_config');
 
@@ -204,7 +214,11 @@ if (!function_exists('aftv_post_thumbnail_caption')) {
 // Enable Shortcodes In Wordpress Text Widgets
 add_filter('widget_text','do_shortcode');
 
-
-
-
+// Include AFTV navigation menus walker
 require get_template_directory() . '/inc/aftv-menu-walker.php';
+
+// Include Our custom Menu WIDGET
+require get_template_directory().'/inc/aftv-custom-menu-widget.php';
+
+// Register The widget
+add_action( 'widgets_init', function() { register_widget( 'AFTV_Nav_Menu_Widget' ); } );
