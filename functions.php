@@ -1,4 +1,5 @@
 <?php
+
 /*
  * =====================================================
  *
@@ -56,10 +57,27 @@ if (!function_exists('aftv_theme_setup')) {
             'audio',
         );
         add_theme_support('post-formats', $aftv_supported_format);
-        
+
         // Add theme support for post thubnails
-        add_theme_support( 'post-thumbnails' );
-        
+        add_theme_support('post-thumbnails');
+
+        //Add Custom Background support
+        $defaults = array(
+            'default-image' => '',
+            'default-preset' => 'default',
+            'default-position-x' => 'left',
+            'default-position-y' => 'top',
+            'default-size' => 'auto',
+            'default-repeat' => 'repeat',
+            'default-attachment' => 'scroll',
+            'default-color' => '',
+            'wp-head-callback' => '_custom_background_cb',
+            'admin-head-callback' => '',
+            'admin-preview-callback' => '',
+        );
+        add_theme_support('custom-background', $defaults);
+
+
         // Register Navigation Menus
         register_nav_menus(array(
             'aftv-header-menu' => __('Menu principal', 'afriqtv'),
@@ -80,27 +98,29 @@ if (!function_exists('aftv_theme_setup')) {
  * ------------------------------------------------------
  */
 
-if( ! function_exists('aftv_scripts')) {
+if (!function_exists('aftv_scripts')) {
+
     function aftv_scripts() {
-        
+
         // Load Material Design Lite STYLESHEET
-        wp_enqueue_style( 'MDL_STYLE', 'https://code.getmdl.io/1.3.0/material.red-orange.min.css' );
-       
+        wp_enqueue_style('MDL_STYLE', 'https://code.getmdl.io/1.3.0/material.red-orange.min.css');
+
         // Load Material Design Lite Fonts
-        wp_enqueue_style( 'MDL_FONTS', 'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' );
-        
+        wp_enqueue_style('MDL_FONTS', 'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
         //Load Material design Icons
-        wp_enqueue_style( 'MDL_ICONS', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
-        
+        wp_enqueue_style('MDL_ICONS', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+
         // Load the theme styleSheet 
-        wp_enqueue_style( 'MAIN_STYLE', get_stylesheet_uri()); 
-        
+        wp_enqueue_style('MAIN_STYLE', get_stylesheet_uri());
+
         //Load Material Design Lite Javascript
-        wp_enqueue_script( 'MDL_JS', 'https://code.getmdl.io/1.3.0/material.min.js',array(),1.0, TRUE );
-        
+        wp_enqueue_script('MDL_JS', 'https://code.getmdl.io/1.3.0/material.min.js', array(), 1.0, TRUE);
+
         // Load The Tv player JS
-        wp_enqueue_script( 'WEB-TV_JS', JS.'/aftv-web-tv.js', array(), 1.0, TRUE);
+        wp_enqueue_script('WEB-TV_JS', JS . '/aftv-web-tv.js', array(), 1.0, TRUE);
     }
+
 }
 add_action('wp_enqueue_scripts', 'aftv_scripts');
 
@@ -114,10 +134,10 @@ add_action('wp_enqueue_scripts', 'aftv_scripts');
  */
 
 // Add a class to my Menu links.
-if ( !function_exists( 'aftv_add_menu_link_class' ) ) {
-    
-    $navClass= "mdl-navigation";
-    
+if (!function_exists('aftv_add_menu_link_class')) {
+
+    $navClass = "mdl-navigation";
+
     function aftv_add_menu_link_class($navClass) {
         return preg_replace('/<a/', '<a class="mdl-navigation__link"', $navClass);
     }
@@ -126,4 +146,4 @@ if ( !function_exists( 'aftv_add_menu_link_class' ) ) {
 }
 
 
-require get_template_directory().'/inc/aftv-menu-walker.php';
+require get_template_directory() . '/inc/aftv-menu-walker.php';
