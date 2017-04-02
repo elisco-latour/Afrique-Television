@@ -41,7 +41,7 @@ get_header();
                                     <?php the_post_thumbnail(); ?>
                                 </div>
                                 <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                    <span class="aftv-cat">Economie</span>
+                                    <span class="aftv-cat"><?php the_category(' '); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h1 class="mdl-card__title-text ">
@@ -79,7 +79,7 @@ get_header();
                                     <?php the_post_thumbnail(); ?>
                                 </div>
                                 <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                    <span class="aftv-cat"><?php echo 'la categorie' ?></span>
+                                    <span class="aftv-cat"><?php the_category(' '); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
@@ -116,7 +116,7 @@ get_header();
                                 ?>
                                 <?php while ($aftv_continu_query->have_posts()):$aftv_continu_query->the_post(); ?>
                                     <a class="continu-item" href="<?php the_permalink(); ?>">
-                                        <p><span class="aftv-cat"><?php echo 'la categorie'; ?></span></p> 
+                                        <p><span class="aftv-cat"><?php echo strip_tags(get_the_category_list(' ' ), ''); ?></span></p> 
                                         <h5><?php the_title(); ?></h5>
                                         <p><?php echo 'publié le: '; ?><?php the_time('j F, Y'); ?></p>
                                     </a>
@@ -155,7 +155,7 @@ get_header();
                                     <?php the_post_thumbnail(); ?>
                                 </div>
                                 <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                    <span class="aftv-cat"><?php echo 'la categorie' ?></span>
+                                    <span class="aftv-cat"><?php the_category(' '); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
@@ -205,7 +205,7 @@ get_header();
                                     </div>
                                     <div class="mdl-cell mdl-cell--12-col">
                                         <p class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone horizontal-cat">
-                                            <span class="aftv-cat ">Economie</span><span class="aftv-cat ">politique</span>
+                                            <span class="aftv-cat "><?php the_category(' '); ?></span>
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class="mdl-card__title-text">
@@ -251,7 +251,7 @@ get_header();
                                     </div>
                                     <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                                         <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone horizontal-cat">
-                                            <span class="aftv-cat "><?php echo 'la categorie'; ?></span>
+                                            <span class="aftv-cat "><?php the_category(' '); ?></span>
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class=" mdl-card__title-text">

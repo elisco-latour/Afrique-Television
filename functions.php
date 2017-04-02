@@ -162,5 +162,11 @@ if (!function_exists('aftv_add_menu_link_class')) {
     add_filter('wp_nav_menu', 'aftv_add_menu_link_class');
 }
 
+if (!function_exists('aftv_post_thumbnail_caption')) {
+
+    function aftv_post_thumbnail_caption($post = null) {
+        echo get_post(get_post_thumbnail_id())->post_excerpt;
+    }
+}
 
 require get_template_directory() . '/inc/aftv-menu-walker.php';

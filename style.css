@@ -71,7 +71,7 @@ body{
 ---------------------*/
 
 .aftv_content{
-    max-width: 80%;
+    max-width: 980px;
     padding: 0;
 }
 
@@ -143,8 +143,14 @@ article .aftv-cat{
     padding: 2px 5px 2px 5px;
     background-color: #e0e0e0;
     color: #757575;
-    font-style: italic;
+/*    font-style: italic;*/
 }
+article .aftv-cat a,
+.continu-item .aftv-cat a{
+    text-decoration: none !important;
+    color: #757575
+}
+
 a.article-link{
     text-decoration: none !important;
 }
@@ -465,6 +471,7 @@ a.article-link{
 .aftv-post__title{
     font-size: 1.8rem;
     margin-bottom: 16px;
+    text-transform: uppercase;
 }
 
 .aftv-post__meta-data{
@@ -493,6 +500,16 @@ a.article-link{
     font-size: 1.3rem;
     font-weight: 400;
 }
+
+
+.aftv-post__caption {
+    text-transform: lowercase;
+    font-size: 1.0rem;
+    color: #9e9e9e;
+}
+
+
+
 /*===============================
  CATEGORIES PAGES
 ================================*/
