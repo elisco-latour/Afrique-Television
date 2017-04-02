@@ -176,7 +176,39 @@ function aftv_widgets_config() {
         'before_title' => '<h1 class="mdl-mega-footer__heading">',
         'after_title' => '</h1>'
     ));
+
+    register_sidebar(array(
+        'name' => __('Footer Sidebar 2'),
+        'id' => 'sidebar-3',
+        'description' => __('Sidebar numero 2 pour le pied de page'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h1 class="mdl-mega-footer__heading">',
+        'after_title' => '</h1>'
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer Sidebar 3'),
+        'id' => 'sidebar-4',
+        'description' => __('Sidebar numero 3 pour le pied de page'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h1 class="mdl-mega-footer__heading">',
+        'after_title' => '</h1>'
+    ));
+
+
+    register_sidebar(array(
+        'name' => __('Footer Sidebar 4'),
+        'id' => 'sidebar-5',
+        'description' => __('Sidebar numero 4 pour le pied de page'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h1 class="mdl-mega-footer__heading">',
+        'after_title' => '</h1>'
+    ));
 }
+
 add_action('widgets_init', 'aftv_widgets_config');
 
 
