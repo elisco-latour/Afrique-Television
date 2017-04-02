@@ -20,34 +20,17 @@
 
                             <div class="mdl-mega-footer__drop-down-section">
                                 <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                                <h1 class="mdl-mega-footer__heading">Details</h1>
-                                <ul class="mdl-mega-footer__link-list">
-                                    <li><a href="#">Specs</a></li>
-                                    <li><a href="#">Tools</a></li>
-                                    <li><a href="#">Resources</a></li>
-                                </ul>
+                                <?php dynamic_sidebar('sidebar-3'); ?>
                             </div>
 
                             <div class="mdl-mega-footer__drop-down-section">
                                 <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                                <h1 class="mdl-mega-footer__heading">Technology</h1>
-                                <ul class="mdl-mega-footer__link-list">
-                                    <li><a href="#">How it works</a></li>
-                                    <li><a href="#">Patterns</a></li>
-                                    <li><a href="#">Usage</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Contracts</a></li>
-                                </ul>
+                                <?php dynamic_sidebar('sidebar-4'); ?>
                             </div>
 
                             <div class="mdl-mega-footer__drop-down-section">
                                 <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                                <h1 class="mdl-mega-footer__heading">FAQ</h1>
-                                <ul class="mdl-mega-footer__link-list">
-                                    <li><a href="#">Questions</a></li>
-                                    <li><a href="#">Answers</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
+                                <?php dynamic_sidebar('sidebar-5'); ?>
                             </div>
 
                         </div>
