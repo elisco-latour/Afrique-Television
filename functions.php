@@ -86,7 +86,8 @@ if (!function_exists('aftv_theme_setup')) {
         // Register Navigation Menus
         register_nav_menus(array(
             'aftv-header-menu' => __('Menu principal', 'afriqtv'),
-            'aftv-drawer-menu' => __('Menu latteral', 'afriqtv')
+            'aftv-drawer-menu' => __('Menu latteral', 'afriqtv'),
+            'aftv-legacy-menu' => __('Menu de Copyright', 'afriqtv')
         ));
     }
 
