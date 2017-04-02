@@ -73,17 +73,19 @@
             </header>
             <div class="mdl-layout__drawer">
                 <span class="mdl-layout-title">Menu</span>
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link " href="">A LA UNE</a>
-                    <a class="mdl-navigation__link" href="">POLITIQUE</a>
-                    <a class="mdl-navigation__link" href="">ECONOMIE</a>
-                    <a class="mdl-navigation__link" href="">SOCIETE</a>
-                    <a class="mdl-navigation__link" href="">SANTE</a>
-                    <a class="mdl-navigation__link" href="">SPORT</a>
-                    <a class="mdl-navigation__link" href="">CULTURE</a>
-                    <a class="mdl-navigation__link" href="">L'INVITE</a>
-                    <a class="mdl-navigation__link" href="">REPORTAGES</a>
-                </nav>
+                <?php 
+                $aftv_drawer_menu_parameters = array(
+                  'theme_location' => 'aftv-drawer-menu',
+                    'container' => 'nav',
+                    'container_class' => 'mdl-navigation',
+                    'items_wrap' => '%3$s',
+                    'walker' => new AFTV_walker()
+                );
+                
+                if (has_nav_menu('aftv-drawer-menu')) {
+                    wp_nav_menu($aftv_drawer_menu_parameters);
+                }
+                ?>
             </div>
             <main class="mdl-layout__content">
                 <!--<div class="mdl-grid aftv-content_spacer"></div>-->
