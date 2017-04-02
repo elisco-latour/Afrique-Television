@@ -77,6 +77,11 @@ if (!function_exists('aftv_theme_setup')) {
         );
         add_theme_support('custom-background', $defaults);
         
+        /*
+         * Let Wordpress Generate of the website
+         * 
+         */
+        add_theme_support( 'title-tag' );
         
         // Register Navigation Menus
         register_nav_menus(array(
