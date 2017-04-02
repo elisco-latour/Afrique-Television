@@ -201,7 +201,7 @@ if (!function_exists('aftv_post_thumbnail_caption')) {
 }
 
 
-// Enabled Shortcodes In Wordpress Text Widgets
+// Enable Shortcodes In Wordpress Text Widgets
 add_filter('widget_text','do_shortcode');
 
 
