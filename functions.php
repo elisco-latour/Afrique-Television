@@ -167,8 +167,9 @@ function aftv_widgets_config() {
         'after_title' => '</h2>'
     ));
 }
-
 add_action('widgets_init', 'aftv_widgets_config');
+
+
 
 
 /* ------------------------------------------------------
@@ -190,11 +191,20 @@ if (!function_exists('aftv_add_menu_link_class')) {
     add_filter('wp_nav_menu', 'aftv_add_menu_link_class');
 }
 
+
+// Display posts Captions
 if (!function_exists('aftv_post_thumbnail_caption')) {
 
     function aftv_post_thumbnail_caption() {
         echo get_post(get_post_thumbnail_id())->post_excerpt;
     }
 }
+
+
+// Enabled Shortcodes In Wordpress Text Widgets
+add_filter('widget_text','do_shortcode');
+
+
+
 
 require get_template_directory() . '/inc/aftv-menu-walker.php';
