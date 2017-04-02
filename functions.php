@@ -163,8 +163,8 @@ function aftv_widgets_config() {
         'description' => __('Sidebar pour afficher des pub normalement sur le front-page'),
         'before_widget' => '',
         'after_widget' => '',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>'
+        'before_title' => '',
+        'after_title' => ''
     ));
 }
 add_action('widgets_init', 'aftv_widgets_config');
