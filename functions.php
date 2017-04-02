@@ -164,7 +164,7 @@ if (!function_exists('aftv_add_menu_link_class')) {
 
 if (!function_exists('aftv_post_thumbnail_caption')) {
 
-    function aftv_post_thumbnail_caption($post = null) {
+    function aftv_post_thumbnail_caption() {
         echo get_post(get_post_thumbnail_id())->post_excerpt;
     }
 }
