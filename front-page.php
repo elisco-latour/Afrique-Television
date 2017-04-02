@@ -128,7 +128,7 @@ get_header();
                     <section class="mdl-cell mdl-cell--12-col aftv-single--widget">
                         <div class="aftv-media--2">
                             <!-- <img src="images/afrique_appli.jpg" alt="APPLICATION MOBILE d'AFRIQUE TELEVISION"/>-->
-                            <?php the_ad(66); ?>
+                            <?php dynamic_sidebar('sidebar-1'); ?>
                         </div>
                     </section>
                 </div>

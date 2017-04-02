@@ -79,7 +79,7 @@ if (!function_exists('aftv_theme_setup')) {
         
         /*
          * Let Wordpress Generate of the website
-         * 
+         * https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
          */
         add_theme_support( 'title-tag' );
         
@@ -115,7 +115,7 @@ if (!function_exists('aftv_custom_logo_setup')) {
 
 /* ------------------------------------------------------
  * 
- * 3 - LOAD AFTV SCRIPTS
+ * 4 - LOAD AFTV SCRIPTS
  * 
  * ------------------------------------------------------
  */
@@ -148,9 +148,32 @@ add_action('wp_enqueue_scripts', 'aftv_scripts');
 
 
 
+
 /* ------------------------------------------------------
  * 
- * 4 - UTILTIES
+ * 5 - Register SIDEBARS
+ * 
+ * ------------------------------------------------------
+ */
+
+function aftv_widgets_config() {
+    register_sidebar(array(
+        'name' => __('Sidebar de Pub'),
+        'id' => 'sidebar-1',
+        'description' => __('Sidebar pour afficher des pub normalement sur le front-page'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ));
+}
+
+add_action('widgets_init', 'aftv_widgets_config');
+
+
+/* ------------------------------------------------------
+ * 
+ * 6 - UTILTIES
  * 
  * ------------------------------------------------------
  */

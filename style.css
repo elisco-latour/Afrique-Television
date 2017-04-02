@@ -54,6 +54,7 @@ body{
 
 .aftv_menu nav a{
     transition: color .4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    text-transform: uppercase;
 }
 
 .aftv_menu nav a:hover{
@@ -181,7 +182,7 @@ a.article-link{
 .continu-item .aftv-cat{
     padding: 3px 5px 3px 5px;
     margin: 2px;
-    color: #ee4336;
+    color: #bf360c;
     transition: 0.3s;
 }
 
@@ -211,7 +212,7 @@ a.article-link{
 
 
 .continu-item:hover .aftv-cat{
-    background-color: #ee4336;
+    background-color: #bf360c;
     color: #fff;
 }
 
@@ -238,7 +239,7 @@ a.article-link{
     font-size: 16px;
     padding: 8px 22px 8px 22px;
     margin: 0;
-    background-color: #ee4336;
+    background-color: #cd0100;
     color: #fff;
 }
 
@@ -447,7 +448,7 @@ a.article-link{
 .aftv-ribbon{
     width: 100%;
     height: 40vh;
-    background-color: #d84315;
+    background-color: #E0E0E0;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
