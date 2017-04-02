@@ -55,8 +55,11 @@ if (!function_exists('aftv_theme_setup')) {
             'gallery',
             'audio',
         );
-        add_theme_support('post-format', $aftv_supported_format);
-
+        add_theme_support('post-formats', $aftv_supported_format);
+        
+        // Add theme support for post thubnails
+        add_theme_support( 'post-thumbnails' );
+        
         // Register Navigation Menus
         register_nav_menus(array(
             'aftv-header-menu' => __('Menu principal', 'afriqtv'),
