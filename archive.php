@@ -42,15 +42,15 @@
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <div class="mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-                        <button class="mdl-card__actions mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored aftv-cat__read-more">
-                            Plus d'articles
-                            <!-- For modern browsers. -->
-                            <i class="material-icons">chevron_right</i>
 
-                            <!-- For IE9 or below. -->
-                            <!-- <i class="material-icons">&#xE5CC;</i> -->
-                        </button>
+                    <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp aftv-pagination-container">
+                        <?php
+                        the_posts_pagination(array(
+                            'prev_text' => __('Page précédente', 'afiqtv'),
+                            'next_text' => __('Page suivante', 'afriqtv'),
+                            'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'afriqtv') . ' </span>'
+                        ));
+                        ?>
                     </div>
 
                 </div>

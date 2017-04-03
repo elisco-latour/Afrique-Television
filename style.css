@@ -760,4 +760,5 @@ h2.screen-reader-text{
    font-weight: 300;
    font-size: 24px;
    border-bottom: 1px solid #e6e6e6;
+   text-transform: uppercase;
 }
