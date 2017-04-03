@@ -36,11 +36,19 @@
                         </div>
 
                         <div class="mdl-mega-footer__bottom-section">
-                            <div class="mdl-logo">AFRIQUE TELEVISION</div>
-                            <ul class="mdl-mega-footer__link-list">
-                                <li><a href="#">Aide</a></li>
-                                <li><a href="#">Termes & Condtions</a></li>
-                            </ul>
+                            <div class="mdl-logo"><?php echo '&copy;'.get_bloginfo('name'); ?></div>
+                            <?php
+                               $contact_menu_args = array(
+                                   'theme_location' => 'aftv-legacy-menu',
+                                   'container' => FALSE,
+                                   'menu_class' => 'mdl-mega-footer__link-list aftv-legacy__link-menu',
+                                   'item_spacing' => 'preserve',
+                                    'walker' => new AFTV_walker()
+                               );
+                               if (has_nav_menu('aftv-legacy-menu')) {
+                                   wp_nav_menu($contact_menu_args);
+                               }
+                            ?>
                         </div>
                     </footer>
                     <button onclick="toggle_player()" class="aftv-mobile_tv mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary">
