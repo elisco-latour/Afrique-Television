@@ -40,8 +40,9 @@ get_header();
                                     <!-- <img src="artticles/000_j364c.jpg"/>-->
                                     <?php the_post_thumbnail(); ?>
                                 </div>
-                                <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                    <span class="aftv-cat"><?php the_category(' '); ?></span>
+                                <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data">
+                                    <span class="aftv-cat"><?php the_category(' | '); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h1 class="mdl-card__title-text ">
@@ -78,8 +79,9 @@ get_header();
                                     <!-- <img src="artticles/000_Par7634959_1_0.jpg"/>-->
                                     <?php the_post_thumbnail(); ?>
                                 </div>
-                                <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                    <span class="aftv-cat"><?php the_category(' '); ?></span>
+                                <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data">
+                                    <span class="aftv-cat"><?php the_category(' | '); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
@@ -102,7 +104,7 @@ get_header();
             <aside class="mdl-cell mdl-cell--4-col  aftv-widget--1">
                 <div class="mdl-grid">
                     <section class="mdl-cell mdl-cell--12-col aftv-single--widget">
-                        <h4 class="aftv-widget--title">L'info en continu</h4>
+                        <h4 class="aftv-widget--title"><?php _e('L\'information en continu', 'afriqtv'); ?></h4>
                         <div class="aftv-continu">
                             <?php
                             $aftv_continu_args = array(
@@ -116,7 +118,7 @@ get_header();
                                 ?>
                                 <?php while ($aftv_continu_query->have_posts()):$aftv_continu_query->the_post(); ?>
                                     <a class="continu-item" href="<?php the_permalink(); ?>">
-                                        <p><span class="aftv-cat"><?php echo strip_tags(get_the_category_list(' ' ), ''); ?></span></p> 
+                                        <p><span class="aftv-cat"><?php echo strip_tags(get_the_category_list(' | ' ), ''); ?></span></p> 
                                         <h5><?php the_title(); ?></h5>
                                         <p><?php echo 'publié le: '; ?><?php the_time('j F, Y'); ?></p>
                                     </a>
@@ -154,8 +156,9 @@ get_header();
                                     <!--<img src="artticles/000_7V2DC(1).jpg"/>-->
                                     <?php the_post_thumbnail(); ?>
                                 </div>
-                                <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                    <span class="aftv-cat"><?php the_category(' '); ?></span>
+                                <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data">
+                                    <span class="aftv-cat"><?php the_category(' | '); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
@@ -204,8 +207,9 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="mdl-cell mdl-cell--12-col">
-                                        <p class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone horizontal-cat">
-                                            <span class="aftv-cat "><?php the_category(' '); ?></span>
+                                        <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone horizontal-cat aftv-meta-data">
+                                            <span class="aftv-cat "><?php the_category(' | '); ?></span>
+                                            <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class="mdl-card__title-text">
@@ -250,8 +254,9 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                        <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone horizontal-cat">
-                                            <span class="aftv-cat "><?php the_category(' '); ?></span>
+                                        <p class="horizontal-cat mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                                            <span class="aftv-cat "><?php the_category(' | '); ?></span>
+                                            <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class=" mdl-card__title-text">

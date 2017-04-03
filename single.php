@@ -28,15 +28,11 @@
                                 <!-- <img src="artticles/000_j364c.jpg"/> -->
                                 <?php the_post_thumbnail(); ?>
                             </div>
-                            <span class="aftv-post__caption"><?php _e('Légende: ','afriqtv').aftv_post_thumbnail_caption(); ?></span>
+                            <span class="aftv-post__caption"><?php aftv_post_thumbnail_caption(); ?></span>
                             <div class="aftv-post__meta-data">
-                                <p class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></p>
-                                <p class="aftv-post__categories">
-                                    <?php
-                                    //Display The post category
-                                    //echo '<span class="aftv-cat">Economie</span><span class="aftv-cat">Politique</span>';
-                                    ?>
-                                    <span class="aftv-cat"><?php the_category(' '); ?></span>
+                                <p class="aftv-single--page__metadata">
+                                    <span class="aftv-cat"><?php the_category(' | '); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                             </div>
                         </header>
