@@ -218,6 +218,16 @@ function aftv_widgets_config() {
         'before_title' => '<h1 class="aftv-cat-page__sidebar-title mdl-card__title-text">',
         'after_title' => '</h1>'
     ));
+    
+    register_sidebar( array(
+         'name' => __('Date based archive Sidebar'),
+        'id' => 'sidebar-7',
+        'description' => __('Sidebar  pour les archives basées sur les dates'),
+        'before_widget' => '<div id="%1$s" class="aftv-widget__container %2$s" >',
+        'after_widget' => '</div>',
+        'before_title' => '<h1 class="aftv-cat-page__sidebar-title mdl-card__title-text">',
+        'after_title' => '</h1>'
+    ));
 }
 
 add_action('widgets_init', 'aftv_widgets_config');
