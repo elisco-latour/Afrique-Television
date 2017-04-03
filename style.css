@@ -531,3 +531,11 @@ a.article-link{
 .aftv-single--widget{
     margin-bottom: 16px;
 }
+
+/*
+* LEGACY MENU
+*/
+
+.aftv-legacy__link-menu .mdl-navigation__link{
+    margin-right: 8px !important;
+}
