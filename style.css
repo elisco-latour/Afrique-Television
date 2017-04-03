@@ -685,3 +685,79 @@ article h2{
     font-size: 15.0rem;
     color: #ffab40;
 }
+
+/*
+*  PAGINATION SECTION
+*/
+
+.aftv-pagination-container{
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #fff;
+}
+
+
+.aftv-pagination-container .nav-links{
+    margin-bottom: 16px;
+}
+
+
+.page-numbers{
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #ff0013;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 8px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    cursor: pointer;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.page-numbers.current{
+    background: #e6e6e6 0;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 8px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+
+h2.screen-reader-text{
+   font-weight: 300;
+   font-size: 24px;
+   border-bottom: 1px solid #e6e6e6;
+}
