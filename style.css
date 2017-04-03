@@ -564,6 +564,7 @@ article h2{
 
 .aftv-pub-image img{
     max-width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .aftv-widget__container{
@@ -576,8 +577,10 @@ article h2{
 }
 
 .aftv-widget__container ul  {
-    padding: 0;
     font-weight: 300;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 8px 16px;
 }
 
 .aftv-widget__container ul li{
