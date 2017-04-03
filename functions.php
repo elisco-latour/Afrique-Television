@@ -208,6 +208,16 @@ function aftv_widgets_config() {
         'before_title' => '<h1 class="mdl-mega-footer__heading">',
         'after_title' => '</h1>'
     ));
+    
+    register_sidebar(array(
+        'name' => __('Footer Sidebar 4'),
+        'id' => 'sidebar-6',
+        'description' => __('Sidebar  pour les differentes pages'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s" >',
+        'after_widget' => '</div>\n',
+        'before_title' => '<h1 class="aftv-cat-page__sidebar-title">',
+        'after_title' => '</h1>\n'
+    ));
 }
 
 add_action('widgets_init', 'aftv_widgets_config');
