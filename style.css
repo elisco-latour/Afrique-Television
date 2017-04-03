@@ -550,6 +550,9 @@ article h2{
     
 }
 
+.aftv-cat__read-more{
+    background: #bf360c !important;
+}
 
 /* 
 *  WIDGETS STYLES
@@ -558,6 +561,90 @@ article h2{
 .aftv-single--widget{
     margin-bottom: 16px;
 }
+
+.aftv-pub-image img{
+    max-width: 100%;
+}
+
+.aftv-widget__container{
+    margin-bottom: 48px !important;
+}
+
+.aftv-widget__container ul li a{
+    text-decoration: none !important;
+    color: #575757;
+}
+
+.aftv-widget__container ul  {
+    padding: 0;
+    font-weight: 300;
+}
+
+.aftv-widget__container ul li{
+    list-style-type: none !important;
+    margin-bottom: 8px;
+    transition: color 0.4s;
+}
+
+.aftv-widget__container ul li a:hover{
+    color: #bf360c;
+}
+
+.aftv-cat-page__sidebar-title {
+    border-bottom: 1px solid #bf360c;
+    margin-bottom: 8px;
+}
+
+
+
+/*
+* WP CALENDAR STYLE
+*/
+#calendar_wrap {
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+   
+}
+
+#calendar_wrap table {
+    width: 100%;
+    background: #ffffff;
+    font-weight: 300;
+}
+
+#calendar_wrap table caption{
+    background: #ffab40;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#calendar_wrap table thead,
+#calendar_wrap table tbody{
+    overflow: hidden;
+    width: 100%;
+}
+
+#calendar_wrap table thead{
+       
+}
+
+#calendar_wrap table tbody{
+
+}
+
+#calendar_wrap table tbody td{
+    text-align: center;
+    color:#b3b3b3
+}
+
+#calendar_wrap table tbody td a{
+    text-decoration: none;
+    
+}
+
+
 
 /*
 * LEGACY MENU

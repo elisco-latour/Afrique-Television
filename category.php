@@ -37,7 +37,7 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                     <div class="mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-                        <button class="mdl-card__actions mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                        <button class="mdl-card__actions mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored aftv-cat__read-more">
                             Plus d'articles
                             <!-- For modern browsers. -->
                             <i class="material-icons">chevron_right</i>
@@ -52,9 +52,12 @@
             <div class="aftv-cat__widgets mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone">
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--12-col">
-                        <p>
-                            SIDEBAR HERE
-                        </p>
+                        <?php
+                        /*
+                         * Display pages sidebar
+                         */
+                        dynamic_sidebar('sidebar-6');
+                        ?>
                     </div>
                 </div>
             </div>

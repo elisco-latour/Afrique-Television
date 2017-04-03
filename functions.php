@@ -210,13 +210,13 @@ function aftv_widgets_config() {
     ));
     
     register_sidebar(array(
-        'name' => __('Footer Sidebar 4'),
+        'name' => __('Pages Sidebar'),
         'id' => 'sidebar-6',
         'description' => __('Sidebar  pour les differentes pages'),
-        'before_widget' => '<div id="%1$s" class="widget %2$s" >',
-        'after_widget' => '</div>\n',
-        'before_title' => '<h1 class="aftv-cat-page__sidebar-title">',
-        'after_title' => '</h1>\n'
+        'before_widget' => '<div id="%1$s" class="aftv-widget__container %2$s" >',
+        'after_widget' => '</div>',
+        'before_title' => '<h1 class="aftv-cat-page__sidebar-title mdl-card__title-text">',
+        'after_title' => '</h1>'
     ));
 }
 
