@@ -656,3 +656,32 @@ article h2{
 .aftv-legacy__link-menu .mdl-navigation__link{
     margin-right: 8px !important;
 }
+
+
+
+/*
+*  404 PAGE STYLES
+*/
+.aftv-404-cam{
+    text-align: center;  
+        width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.aftv-404-cam h4 {
+    font-weight: 300;
+  
+}
+
+.aftv-404-cam p{
+      font-size: 1.2rem;
+      font-weight: 300;
+}
+
+
+.aftv-404-cam i{
+    font-size: 15.0rem;
+    color: #ffab40;
+}
