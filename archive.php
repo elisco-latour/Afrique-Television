@@ -42,8 +42,12 @@
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <?php get_template_part('template-parts/navigation/aftv', 'page-navigation'); ?>
-
+                    <?php
+                    /*
+                     * Display the page navigation here
+                     */
+                    get_template_part('template-parts/navigation/aftv', 'page-navigation'); 
+                    ?>
                 </div>
             </div>
         </div>

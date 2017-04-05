@@ -8,7 +8,7 @@
     the_posts_pagination(array(
         'prev_text' => __('Page précédente', 'afiqtv'),
         'next_text' => __('Page suivante', 'afriqtv'),
-        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'afriqtv') . ' </span>'
+        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('', 'afriqtv') . ' </span>'
     ));
     ?>
 </div>

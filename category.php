@@ -36,7 +36,12 @@
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <?php get_template_part('template-parts/navigation/aftv', 'page-navigation'); ?>
+                    <?php
+                    /*
+                     * Display the page navigation here
+                     */
+                    get_template_part('template-parts/navigation/aftv', 'page-navigation');
+                    ?>
                 </div>
             </div>
             <div class="aftv-cat__widgets mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone">
