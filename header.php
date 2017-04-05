@@ -30,8 +30,8 @@
                         ?>
                     </span>
                     <div class="mdl-layout-spacer"></div>
-                    <button  onclick="toggle_player()" id="toggle_player" class="aftv-live_tv mdl-button mdl-js-button">
-                        la chaîne web <i class="material-icons">live_tv</i>
+                    <button  onclick="toggle_player()" id="toggle_player" class="aftv-live_tv mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                        <?php _e('la chaîne web') ?> <i class="material-icons">live_tv</i>
                     </button>
                     <div class="aftv-search mdl-textfield mdl-js-textfield mdl-textfield--expandable
                          mdl-textfield--floating-label mdl-textfield--align-right">
