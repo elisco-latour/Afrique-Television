@@ -36,17 +36,7 @@
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
-
-                    <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp aftv-pagination-container">
-                        <?php
-                        the_posts_pagination(array(
-                            'prev_text' => __('Page précédente', 'afiqtv'),
-                            'next_text' => __('Page suivante', 'afriqtv'),
-                            'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'afriqtv') . ' </span>'
-                        ));
-                        ?>
-                    </div>
-
+                    <?php get_template_part('template-parts/navigation/aftv', 'page-navigation'); ?>
                 </div>
             </div>
             <div class="aftv-cat__widgets mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone">
