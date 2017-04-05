@@ -372,8 +372,8 @@ article h2{
 @media screen and (max-width: 768px){
     .aftv-mobile_tv{
         position: fixed;
-        bottom: 40px;
-        right: 40px;
+        bottom: 10px;
+        right: 20px;
         z-index: 2;
         cursor: pointer;
         background-color: #ffab40 !important;
