@@ -103,12 +103,13 @@ get_header();
             <!-- ASide STARTS -->
             <aside class="mdl-cell mdl-cell--4-col  aftv-widget--1">
                 <div class="mdl-grid">
+                    <h4 class="aftv-widget--title">L'information en continu</h4>
                     <section class="aftv-timeline-container">
                         <div class="aftv-timeline">
-                                                        <?php
+                            <?php
                             $aftv_continu_args = array(
                                 'cat' => array(),
-                                'posts_per_page' => 5,
+                                'posts_per_page' => 4,
                                 'orderby' => 'date'
                             );
                             $aftv_continu_query = new WP_Query($aftv_continu_args);
@@ -184,7 +185,7 @@ get_header();
                 </div>
             </section>
 
-
+            <!-- SECTION DES EMISSIONS -->
             <section class="aftv-cat-section aftv-special-section mdl-cell mdl-cell--12-col ">
                 <div class="mdl-grid emissions mdl-grid--no-spacing ">
                     <div class="mdl-cell mdl-cell--12-col">
@@ -206,7 +207,7 @@ get_header();
                                 <div class="mdl-grid">
                                     <div class="mdl-cell mdl-cell--12-col">
                                         <div class="mdl_card_media mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                            <div class="aftv-media">
+                                            <div class="aftv-media__video">
                                                 <!-- <img src="artticles/000_il2rv_0.jpg"/>-->
                                                 <?php the_post_thumbnail(); ?>
                                             </div>
