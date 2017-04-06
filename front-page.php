@@ -53,7 +53,7 @@ get_header();
                                     <?php echo get_the_excerpt(); ?>
                                 </p>
                                 <div class="mdl-card__actions ">
-                                    <a class="mdl-button mdl-js-button mdl-button--primary  " href="<?php the_permalink() ?>">
+                                    <a class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect " href="<?php the_permalink() ?>">
                                         Lire l'article
                                     </a>
                                 </div>
@@ -89,7 +89,7 @@ get_header();
                                     </h2>
                                 </div>
                                 <div class="mdl-card__actions">
-                                    <a class="mdl-button mdl-js-button mdl-button--primary" href="<?php the_permalink(); ?>">
+                                    <a class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect" href="<?php the_permalink(); ?>">
                                         Lire l'article
                                     </a>
                                 </div>
@@ -103,13 +103,12 @@ get_header();
             <!-- ASide STARTS -->
             <aside class="mdl-cell mdl-cell--4-col  aftv-widget--1">
                 <div class="mdl-grid">
-                    <section class="mdl-cell mdl-cell--12-col aftv-single--widget">
-                        <h4 class="aftv-widget--title"><?php _e('L\'information en continu', 'afriqtv'); ?></h4>
-                        <div class="aftv-continu">
-                            <?php
+                    <section class="aftv-timeline-container">
+                        <div class="aftv-timeline">
+                                                        <?php
                             $aftv_continu_args = array(
                                 'cat' => array(),
-                                'posts_per_page' => 4,
+                                'posts_per_page' => 5,
                                 'orderby' => 'date'
                             );
                             $aftv_continu_query = new WP_Query($aftv_continu_args);
@@ -117,16 +116,24 @@ get_header();
                             if ($aftv_continu_query->have_posts()):
                                 ?>
                                 <?php while ($aftv_continu_query->have_posts()):$aftv_continu_query->the_post(); ?>
+
+
+                            <div class="miakpo">
+                                <div class="aftv-timeline__img"></div>
+                                
                                     <a class="continu-item" href="<?php the_permalink(); ?>">
-                                        <p><span class="aftv-cat"><?php echo strip_tags(get_the_category_list(' | ' ), ''); ?></span></p> 
+                                        <p><span class="aftv-cat"><?php echo strip_tags(get_the_category_list(' | '), ''); ?></span></p> 
                                         <h5><?php the_title(); ?></h5>
                                         <p><?php echo 'publié le: '; ?><?php the_time('j F, Y'); ?></p>
                                     </a>
-                                <?php endwhile; ?>
+                                
+                            </div>
+                            <?php endwhile; ?>
                             <?php endif; ?>
                             <?php wp_reset_postdata(); ?>
                         </div>
                     </section>
+
                     <section class="mdl-cell mdl-cell--12-col aftv-single--widget">
                         <div class="aftv-media--2">
                             <!-- <img src="images/afrique_appli.jpg" alt="APPLICATION MOBILE d'AFRIQUE TELEVISION"/>-->
@@ -135,7 +142,6 @@ get_header();
                     </section>
                 </div>
             </aside>
-
 
             <!-- TOUTE L'ACTUALITE -->
             <section class="aftv-cat-section mdl-cell mdl-cell--12-col">
@@ -167,7 +173,7 @@ get_header();
                                 </div>
 
                                 <div class="mdl-card__actions">
-                                    <a class="mdl-button mdl-js-button mdl-button--primary" href="<?php the_permalink(); ?>">
+                                    <a class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect" href="<?php the_permalink(); ?>">
                                         Lire l'article
                                     </a>
                                 </div>
@@ -217,7 +223,7 @@ get_header();
                                             </h2>
                                         </div>
                                         <div class="mdl-card__actions">
-                                            <a class="mdl-button mdl-js-button mdl-button--primary" href="<?php the_permalink(); ?>">
+                                            <a class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect" href="<?php the_permalink(); ?>">
                                                 Suivre l'émission
                                             </a>
                                         </div>
@@ -245,15 +251,15 @@ get_header();
                     if ($aftv_dossiers_query->have_posts()):
                         ?>
                         <?php while ($aftv_dossiers_query->have_posts()):$aftv_dossiers_query->the_post(); ?>
-                            <div class="mdl-grid">
-                                <article class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article">
 
+                            <article class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article">
+                                <div class="mdl-grid">
                                     <div class="mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                                         <div class="mdl_card_media aftv-media mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                                             <?php the_post_thumbnail(); ?>
                                         </div>
                                     </div>
-                                    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                                         <p class="horizontal-cat mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                                             <span class="aftv-cat "><?php the_category(' | '); ?></span>
                                             <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
@@ -268,13 +274,14 @@ get_header();
                                             <?php echo get_the_excerpt(); ?>
                                         </p>
                                         <div class="mdl-card__actions">
-                                            <a class="mdl-button mdl-js-button mdl-button--primary" href="<?php the_permalink(); ?>">
+                                            <a class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect" href="<?php the_permalink(); ?>">
                                                 Lire l'article
                                             </a>
                                         </div>
                                     </div>
-                                </article>
-                            </div>
+                                </div>
+                            </article>
+
                         <?php endwhile; ?>
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>

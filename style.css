@@ -196,7 +196,7 @@ a.article-link{
 
 /* AFTV WIDGETS 1*/
 .aftv-widget--1{
-    background-color: #303030;
+    /*background-color: #303030;*/
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -208,6 +208,7 @@ a.article-link{
     padding: 0px 10px 0px 10px;
     transition: 0.3s;
     margin-bottom: 5px;
+     background-color: #424242;
 }
 
 .continu-item .aftv-cat{
@@ -238,8 +239,7 @@ a.article-link{
 }
 
 .continu-item:hover{
-    background-color: #424242;
-
+  background-color: #212121;
 }
 
 
@@ -779,4 +779,106 @@ h2.screen-reader-text{
    border-bottom: 1px solid #e6e6e6;
    text-transform: uppercase;*/
    display: none !important;
+}
+
+
+
+
+
+/*
+*
+* Timeline MODULE
+* 
+*
+*/
+
+.aftv-timeline-container{
+    width: 100%;
+    position: relative;
+}
+
+.aftv-timeline-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.aftv-timeline{
+    
+}
+
+.aftv-timeline a{
+    display: block;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-left: 16px;
+    position: relative;
+}
+
+.aftv-timeline:before {
+    content: "";
+    width: 2px;
+    background-color: #f44336;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.aftv-timeline__img{
+    display: block;
+}
+
+.aftv-timeline__img:before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: -7px;
+    background-color: #f44336;
+    border-radius: 50%;
+}
+
+.miakpo{
+    position: relative;
+}
+
+.aftv-recent_title {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    display: block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    line-height: normal;
+    padding: 16px;
+    -webkit-perspective-origin: 165px 56px;
+    perspective-origin: 165px 56px;
+    -webkit-transform-origin: 165px 56px;
+    transform-origin: 165px 56px;
+    box-sizing: border-box;
+}
+
+.aftv-recent_title-text{
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    color: inherit;
+    display: block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px !important;
+    font-weight: 300;
+    line-height: normal;
+    overflow: hidden;
+    -webkit-transform-origin: 149px 48px;
+    transform-origin: 149px 48px;
+    margin: 0;
 }
