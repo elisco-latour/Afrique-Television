@@ -131,6 +131,14 @@ body{
     background-position: center;
 }
 
+.aftv-media__video img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .aftv-single--posst-content .aftv-media img{
     position: absolute;
     top: 50%;
@@ -196,19 +204,20 @@ a.article-link{
 
 /* AFTV WIDGETS 1*/
 .aftv-widget--1{
-    /*background-color: #303030;*/
+    background-color: #fff;
     margin-top: 16px;
     margin-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .continu-item {
     display: inline-block;
     text-decoration: none;
-    color: #9e9e9e;
+    color: #424242;
     padding: 0px 10px 0px 10px;
     transition: 0.3s;
     margin-bottom: 5px;
-     background-color: #424242;
 }
 
 .continu-item .aftv-cat{
@@ -233,13 +242,13 @@ a.article-link{
 
 .aftv-widget--title{
     border-bottom: 0.5px solid #ee4336;
-    color: #e0e0e0;
+    color: #424242;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .continu-item:hover{
-  background-color: #212121;
+  color: #bf360c;
 }
 
 
@@ -795,6 +804,7 @@ h2.screen-reader-text{
 .aftv-timeline-container{
     width: 100%;
     position: relative;
+    margin-bottom: 32px;
 }
 
 .aftv-timeline-container:after{
@@ -832,10 +842,10 @@ h2.screen-reader-text{
 .aftv-timeline__img:before{
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     top: 0;
-    left: -7px;
+    left: -5px;
     background-color: #f44336;
     border-radius: 50%;
 }
