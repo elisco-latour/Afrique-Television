@@ -240,11 +240,22 @@ function aftv_widgets_config() {
         'after_title' => ''
     ));
     
-    // TThird width content Ad Sidebar
+    // Third width content Ad Sidebar
     register_sidebar(array(
         'name' => 'Third Width content Ad',
         'id' => 'sidebar-9',
         'description' => 'Put An Ad in this sidebar to make it fits the third part of the width of the page',
+        'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ));
+    
+    // Quarter Width content Sidebar
+    register_sidebar(array(
+        'name' => 'Quarter width content Ad Sidebar',
+        'id' => 'sidebar-10',
+        'description' => 'Put An Ad in this sidebar to make it fits the Quarter part of the width of the page',
         'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
         'after_widget' => '</div>',
         'before_title' => '',
