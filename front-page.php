@@ -101,9 +101,9 @@ get_header();
             </section>
 
             <!-- ASide STARTS -->
-            <aside class="mdl-cell mdl-cell--4-col  aftv-widget--1">
+            <aside class="mdl-cell mdl-cell--4-col mdl-shadow--2dp aftv-widget--1">
                 <div class="mdl-grid">
-                    <h4 class="aftv-widget--title">L'information en continu</h4>
+                    <h4 class="aftv-widget--title mdl-cell--12-col">L'info en continu</h4>
                     <section class="aftv-timeline-container">
                         <div class="aftv-timeline">
                             <?php
