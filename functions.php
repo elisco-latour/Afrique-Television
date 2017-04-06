@@ -229,11 +229,22 @@ function aftv_widgets_config() {
         'after_title' => '</h1>'
     ));
     
-    // Full page content width Ads Sidebar
+    // Full page content Ad Sidebar
     register_sidebar(array(
         'name' => __('Full Page width Ad'),
         'id' => 'sidebar-8',
-        'description' =>'Put an Ad in this sidebar to make it fit the content of the page',
+        'description' =>'Put an Ad in this sidebar to make it fits the content of the page',
+        'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ));
+    
+    // TThird width content Ad Sidebar
+    register_sidebar(array(
+        'name' => 'Third Width content Ad',
+        'id' => 'sidebar-9',
+        'description' => 'Put An Ad in this sidebar to make it fits the third part of the width of the page',
         'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
         'after_widget' => '</div>',
         'before_title' => '',
