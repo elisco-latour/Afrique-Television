@@ -24,8 +24,6 @@
                         <header class="aftv-single--post-header">
                             <h1 class="aftv-post__title mdl-card__title-text mdl-card__title-text"><?php the_title(); ?></h1>
                             <div class="mdl_card_media aftv-media aftv-post__thumbnail">
-                                <!-- <iframe src="https://www.youtube.com/embed/qmVID93aqP4?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe> -->
-                                <!-- <img src="artticles/000_j364c.jpg"/> -->
                                 <?php the_post_thumbnail(); ?>
                             </div>
                             <span class="aftv-post__caption"><?php aftv_post_thumbnail_caption(); ?></span>

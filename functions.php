@@ -263,15 +263,14 @@ if (!function_exists('aftv_post_thumbnail_caption')) {
     }
 }
 
-
 // Enable Shortcodes In Wordpress Text Widgets
 add_filter('widget_text','do_shortcode');
 
 // Include AFTV navigation menus walker
-require get_template_directory() . '/inc/aftv-menu-walker.php';
+require_once(get_template_directory() . '/inc/aftv-menu-walker.php');
 
 // Include Our custom Menu WIDGET
-require get_template_directory().'/inc/aftv-custom-menu-widget.php';
+require_once(get_template_directory().'/inc/aftv-custom-menu-widget.php');
 
-// Register The widget
+// Register The footer navigation menu widget
 add_action( 'widgets_init', function() { register_widget( 'AFTV_Nav_Menu_Widget' ); } );
