@@ -125,7 +125,7 @@ get_header();
                                     <a class="continu-item" href="<?php the_permalink(); ?>">
                                         <p><span class="aftv-cat"><?php echo strip_tags(get_the_category_list(' | '), ''); ?></span></p> 
                                         <h5><?php the_title(); ?></h5>
-                                        <p><?php echo 'publié le: '; ?><?php the_time('j F, Y'); ?></p>
+                                        <p><?php echo 'Publié le: '; ?><?php the_time('j F, Y'); ?></p>
                                     </a>
                                 
                             </div>
