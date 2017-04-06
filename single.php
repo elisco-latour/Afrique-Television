@@ -10,11 +10,10 @@
         <div class="page-content ">
 
             <?Php
-            require
-                    /*
-                     * Load the web Tv section
-                     */
-                    get_template_directory() . '/inc/web-tv-section.php';
+            /*
+             * Load Web TV Section
+             */
+            require get_template_directory() . '/inc/web-tv-section.php';
             ?>
             <div class="mdl-grid  aftv-single--page-container">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>

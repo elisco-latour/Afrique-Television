@@ -184,7 +184,15 @@ get_header();
                     <?php wp_reset_postdata(); ?>
                 </div>
             </section>
-
+            
+            <!-- SECTION DE PUBLICITE 1 -->
+            <section class="aftv-cat-section mdl-cell--12-col mdl-cell--hide-phone mdl-cell--hide-tablet">
+                <div class="mdl-grid" >
+                    
+                </div>
+            </section>
+             <!-- FIN DE LA  SECTION DE PUBLICITE 1 -->
+             
             <!-- SECTION DES EMISSIONS -->
             <section class="aftv-cat-section aftv-special-section mdl-cell mdl-cell--12-col ">
                 <div class="mdl-grid emissions mdl-grid--no-spacing ">
@@ -236,6 +244,14 @@ get_header();
                     <?php wp_reset_postdata(); ?>
                 </div>
             </section>
+            
+            <!-- SECTION DE PUBLICITE 2 -->
+            <section class="aftv-cat-section mdl-cell--12-col mdl-cell--hide-phone mdl-cell--hide-tablet">
+                <div class="mdl-grid">
+                    
+                </div>
+            </section>
+            <!-- FIN DE LA  SECTION DE PUBLICITE 2 -->
 
             <section class="aftv-cat-section aftv-special-section mdl-cell mdl-cell--12-col">
                 <div class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
@@ -289,6 +305,14 @@ get_header();
 
                 </div>
             </section>
+            
+            <!-- SECTION DE PUBLICITE 2 -->
+            <section class="aftv-cat-section mdl-cell--12-col mdl-cell--hide-phone mdl-cell--hide-tablet">
+                <div class="mdl-grid">
+                    
+                </div>
+            </section>
+            <!-- FIN DE LA  SECTION DE PUBLICITE 2 -->
         </div> 
         <?php
         /*
