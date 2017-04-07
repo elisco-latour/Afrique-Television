@@ -13,10 +13,10 @@ class AFTV_Nav_Menu_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 		$widget_ops = array(
-			'description' => __( 'Ajouter un menu personnalisé au pied de page'),
+			'description' => __( 'Ajouter un menu personnalis&eacute; au pied de page'),
 			'customize_selective_refresh' => true,
 		);
-		parent::__construct( 'aftv_footer_menu_widget', __('AFTV Menu personnalisé'), $widget_ops );
+		parent::__construct( 'aftv_footer_menu_widget', __('AFTV Menu personnalis&eacute;'), $widget_ops );
 	}
 
 	/**

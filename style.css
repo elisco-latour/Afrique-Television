@@ -338,6 +338,11 @@ a.article-link{
 
 .aftv-horizontal-group-article{
     border-bottom: 1px solid #ececec;
+    margin-bottom: 16px !important;
+}
+
+.aftv-horizontal-group-article:nth-last-of-type(1){
+    margin-bottom: 0px !important;
 }
 
 .aftv-horizontal-group-article h2{

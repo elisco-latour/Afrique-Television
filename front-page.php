@@ -42,7 +42,7 @@ get_header();
                                 </div>
                                 <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data">
                                     <span class="aftv-cat"><?php the_category(' | '); ?></span>
-                                    <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publi&eacute; le: ') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h1 class="mdl-card__title-text ">
@@ -81,7 +81,7 @@ get_header();
                                 </div>
                                 <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data">
                                     <span class="aftv-cat"><?php the_category(' | '); ?></span>
-                                    <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publi&eacute; le: ') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
@@ -125,7 +125,7 @@ get_header();
                                     <a class="continu-item" href="<?php the_permalink(); ?>">
                                         <p><span class="aftv-cat"><?php echo strip_tags(get_the_category_list(' | '), ''); ?></span></p> 
                                         <h5><?php the_title(); ?></h5>
-                                        <p><?php echo 'Publié le: '; ?><?php the_time('j F, Y'); ?></p>
+                                        <p><?php echo 'publi&eacute; le: '; ?><?php the_time('j F, Y'); ?></p>
                                     </a>
                                 
                             </div>
@@ -165,7 +165,7 @@ get_header();
                                 </div>
                                 <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data">
                                     <span class="aftv-cat"><?php the_category(' | '); ?></span>
-                                    <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publi&eacute; le: ') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
@@ -224,7 +224,7 @@ get_header();
                                     <div class="mdl-cell mdl-cell--12-col">
                                         <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone horizontal-cat aftv-meta-data">
                                             <span class="aftv-cat "><?php the_category(' | '); ?></span>
-                                            <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
+                                            <span class="aftv-post__date"><?php _e('publi&eacute; le: ') ?><?php the_time('j, F, Y'); ?></span>
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class="mdl-card__title-text">
@@ -233,7 +233,7 @@ get_header();
                                         </div>
                                         <div class="mdl-card__actions">
                                             <a class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect" href="<?php the_permalink(); ?>">
-                                                Suivre l'émission
+                                                Suivre l'&eacute;mission
                                             </a>
                                         </div>
                                     </div>                        
@@ -279,7 +279,7 @@ get_header();
                                     <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                                         <p class="horizontal-cat mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                                             <span class="aftv-cat "><?php the_category(' | '); ?></span>
-                                            <span class="aftv-post__date"><?php _e('publié le: ') ?><?php the_time('j, F, Y'); ?></span>
+                                            <span class="aftv-post__date"><?php _e('publi&eacute; le: ') ?><?php the_time('j, F, Y'); ?></span>
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class=" mdl-card__title-text">
