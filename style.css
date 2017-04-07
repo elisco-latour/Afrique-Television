@@ -848,7 +848,7 @@ h2.screen-reader-text{
     position: absolute;
     width: 12px;
     height: 12px;
-    top: 0;
+    top: 8px;
     left: -5px;
     background-color: #f44336;
     border-radius: 50%;
