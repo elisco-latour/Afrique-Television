@@ -215,7 +215,7 @@ get_header();
                                 <div class="mdl-grid">
                                     <div class="mdl-cell mdl-cell--12-col">
                                         <div class="mdl_card_media mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                                            <div class="aftv-media__video">
+                                            <div class="aftv-media">
                                                 <!-- <img src="artticles/000_il2rv_0.jpg"/>-->
                                                 <?php the_post_thumbnail(); ?>
                                             </div>
