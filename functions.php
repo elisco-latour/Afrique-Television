@@ -46,7 +46,7 @@ if (!function_exists('aftv_theme_setup')) {
     function aftv_theme_setup() {
         // Make the theme available for translation
         $lang_dir = THEME_ROOT . '/languages';
-        load_textdomain('afriqtv', $lang_dir);
+        load_textdomain('afrique-television', $lang_dir);
 
 
         // Enable support for Post Formats
@@ -85,9 +85,9 @@ if (!function_exists('aftv_theme_setup')) {
         
         // Register Navigation Menus
         register_nav_menus(array(
-            'aftv-header-menu' => __('Menu principal', 'afriqtv'),
-            'aftv-drawer-menu' => __('Menu latteral', 'afriqtv'),
-            'aftv-legacy-menu' => __('Menu de Copyright', 'afriqtv')
+            'aftv-header-menu' => __('Menu principal', 'afrique-television'),
+            'aftv-drawer-menu' => __('Menu latteral', 'afrique-television'),
+            'aftv-legacy-menu' => __('Menu de Copyright', 'afrique-television')
         ));
     }
 
@@ -159,9 +159,9 @@ add_action('wp_enqueue_scripts', 'aftv_scripts');
 
 function aftv_widgets_config() {
     register_sidebar(array(
-        'name' => __('Sidebar de Pub'),
+        'name' => __('Sidebar de Pub','afrique-television'),
         'id' => 'sidebar-1',
-        'description' => __('Sidebar pour afficher des pub normalement sur le front-page'),
+        'description' => __('Sidebar pour afficher des pub normalement sur le front-page','afrique-television'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '',
@@ -169,9 +169,9 @@ function aftv_widgets_config() {
     ));
 
     register_sidebar(array(
-        'name' => __('Footer Sidebar 1'),
+        'name' => __('Footer Sidebar 1','afrique-television'),
         'id' => 'sidebar-2',
-        'description' => __('Sidebar numero 1 pour le pied de page'),
+        'description' => __('Sidebar numero 1 pour le pied de page','afrique-television'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h1 class="mdl-mega-footer__heading">',
@@ -179,9 +179,9 @@ function aftv_widgets_config() {
     ));
 
     register_sidebar(array(
-        'name' => __('Footer Sidebar 2'),
+        'name' => __('Footer Sidebar 2','afrique-television'),
         'id' => 'sidebar-3',
-        'description' => __('Sidebar numero 2 pour le pied de page'),
+        'description' => __('Sidebar numero 2 pour le pied de page','afrique-television'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h1 class="mdl-mega-footer__heading">',
@@ -189,9 +189,9 @@ function aftv_widgets_config() {
     ));
 
     register_sidebar(array(
-        'name' => __('Footer Sidebar 3'),
+        'name' => __('Footer Sidebar 3','afrique-television'),
         'id' => 'sidebar-4',
-        'description' => __('Sidebar numero 3 pour le pied de page'),
+        'description' => __('Sidebar numero 3 pour le pied de page','afrique-television'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h1 class="mdl-mega-footer__heading">',
@@ -200,9 +200,9 @@ function aftv_widgets_config() {
 
 
     register_sidebar(array(
-        'name' => __('Footer Sidebar 4'),
+        'name' => __('Footer Sidebar 4','afrique-television'),
         'id' => 'sidebar-5',
-        'description' => __('Sidebar numero 4 pour le pied de page'),
+        'description' => __('Sidebar numero 4 pour le pied de page','afrique-television'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h1 class="mdl-mega-footer__heading">',
@@ -210,9 +210,9 @@ function aftv_widgets_config() {
     ));
     
     register_sidebar(array(
-        'name' => __('Pages Sidebar'),
+        'name' => __('Pages Sidebar','afrique-television'),
         'id' => 'sidebar-6',
-        'description' => __('Sidebar  pour les differentes pages'),
+        'description' => __('Sidebar  pour les differentes pages','afrique-television'),
         'before_widget' => '<div id="%1$s" class="aftv-widget__container %2$s" >',
         'after_widget' => '</div>',
         'before_title' => '<h1 class="aftv-cat-page__sidebar-title mdl-card__title-text">',
@@ -220,9 +220,9 @@ function aftv_widgets_config() {
     ));
     
     register_sidebar( array(
-         'name' => __('Date based archive Sidebar'),
+         'name' => __('Date based archive Sidebar','afrique-television'),
         'id' => 'sidebar-7',
-        'description' => __('Sidebar  pour les archives bas&eacute;es sur les dates'),
+        'description' => __('Sidebar  pour les archives bas&eacute;es sur les dates','afrique-television'),
         'before_widget' => '<div id="%1$s" class="aftv-widget__container %2$s" >',
         'after_widget' => '</div>',
         'before_title' => '<h1 class="aftv-cat-page__sidebar-title mdl-card__title-text">',
@@ -231,9 +231,9 @@ function aftv_widgets_config() {
     
     // Full page content Ad Sidebar
     register_sidebar(array(
-        'name' => __('Full Page width Ad'),
+        'name' => __('Full Page width Ad','afrique-television'),
         'id' => 'sidebar-8',
-        'description' =>'Put an Ad in this sidebar to make it fits the content of the page',
+        'description' =>__('Put an Ad in this sidebar to make it fits the content of the page','afrique-television'),
         'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
         'after_widget' => '</div>',
         'before_title' => '',
@@ -242,9 +242,9 @@ function aftv_widgets_config() {
     
     // Third width content Ad Sidebar
     register_sidebar(array(
-        'name' => 'Third Width content Ad',
+        'name' => __('Third Width content Ad','afrique-television'),
         'id' => 'sidebar-9',
-        'description' => 'Put An Ad in this sidebar to make it fits the third part of the width of the page',
+        'description' => __('Put An Ad in this sidebar to make it fits the third part of the width of the page','afrique-television'),
         'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
         'after_widget' => '</div>',
         'before_title' => '',
@@ -253,9 +253,9 @@ function aftv_widgets_config() {
     
     // Quarter Width content Sidebar
     register_sidebar(array(
-        'name' => 'Quarter width content Ad Sidebar',
+        'name' => __('Quarter width content Ad Sidebar','afrique-television'),
         'id' => 'sidebar-10',
-        'description' => 'Put An Ad in this sidebar to make it fits the Quarter part of the width of the page',
+        'description' => __('Put An Ad in this sidebar to make it fits the Quarter part of the width of the page','afrique-television'),
         'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
         'after_widget' => '</div>',
         'before_title' => '',

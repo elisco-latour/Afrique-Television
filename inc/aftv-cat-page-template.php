@@ -30,7 +30,7 @@ function aftv_show_catpage($aftv_category) {
     $cat_page_output .= '</div>';
     $cat_page_output .= '<p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data aftv-category-page">';
     $cat_page_output .= '<span class="aftv-cat">'.the_category(' | ').'</span>';
-    $cat_page_output .= '<span class="aftv-post__date">'._e('publi&acute; le: ');
+    $cat_page_output .= '<span class="aftv-post__date">'._e('publi&eacute; le: ','afrique-television');
     $cat_page_output .= the_time('j, F, Y').'</span>';
     $cat_page_output .= '</p>';
     $cat_page_output .= '<div class="mdl-card__title">';

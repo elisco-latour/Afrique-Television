@@ -29,7 +29,7 @@
                             <div class="aftv-post__meta-data">
                                 <p class="aftv-single--page__metadata">
                                     <span class="aftv-cat"><?php the_category(' | '); ?></span>
-                                    <span class="aftv-post__date"><?php _e('publi&eacute; le: ') ?><?php the_time('j, F, Y'); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publi&eacute; le: ','afrique-television') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                             </div>
                         </header>

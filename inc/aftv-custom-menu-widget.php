@@ -13,10 +13,10 @@ class AFTV_Nav_Menu_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 		$widget_ops = array(
-			'description' => __( 'Ajouter un menu personnalis&eacute; au pied de page'),
+			'description' => __( 'Ajouter un menu personnalis&eacute; au pied de page','afrique-television'),
 			'customize_selective_refresh' => true,
 		);
-		parent::__construct( 'aftv_footer_menu_widget', __('AFTV Menu personnalis&eacute;'), $widget_ops );
+		parent::__construct( 'aftv_footer_menu_widget', __('AFTV Menu personnalis&eacute;','afrique-television'), $widget_ops );
 	}
 
 	/**
@@ -123,17 +123,17 @@ class AFTV_Nav_Menu_Widget extends WP_Widget {
 				$url = admin_url( 'nav-menus.php' );
 			}
 			?>
-			<?php echo sprintf( __( 'No menus have been created yet. <a href="%s">Create some</a>.' ), esc_attr( $url ) ); ?>
+			<?php echo sprintf( __( 'No menus have been created yet. <a href="%s">Create some</a>.','afrique-television' ), esc_attr( $url ) ); ?>
 		</p>
 		<div class="nav-menu-widget-form-controls" <?php if ( empty( $menus ) ) { echo ' style="display:none" '; } ?>>
 			<p>
-				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ) ?></label>
+				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','afrique-television' ) ?></label>
 				<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $title ); ?>"/>
 			</p>
 			<p>
-				<label for="<?php echo $this->get_field_id( 'nav_menu' ); ?>"><?php _e( 'Select Menu:' ); ?></label>
+				<label for="<?php echo $this->get_field_id( 'nav_menu' ); ?>"><?php _e( 'Select Menu:' ,'afrique-television'); ?></label>
 				<select id="<?php echo $this->get_field_id( 'nav_menu' ); ?>" name="<?php echo $this->get_field_name( 'nav_menu' ); ?>">
-					<option value="0"><?php _e( '&mdash; Select &mdash;' ); ?></option>
+					<option value="0"><?php _e( '&mdash; Select &mdash;','afrique-television' ); ?></option>
 					<?php foreach ( $menus as $menu ) : ?>
 						<option value="<?php echo esc_attr( $menu->term_id ); ?>" <?php selected( $nav_menu, $menu->term_id ); ?>>
 							<?php echo esc_html( $menu->name ); ?>
@@ -143,7 +143,7 @@ class AFTV_Nav_Menu_Widget extends WP_Widget {
 			</p>
 			<?php if ( $wp_customize instanceof WP_Customize_Manager ) : ?>
 				<p class="edit-selected-nav-menu" style="<?php if ( ! $nav_menu ) { echo 'display: none;'; } ?>">
-					<button type="button" class="button"><?php _e( 'Edit Menu' ) ?></button>
+					<button type="button" class="button"><?php _e( 'Edit Menu','afrique-television' ) ?></button>
 				</p>
 			<?php endif; ?>
 		</div>
