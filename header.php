@@ -69,7 +69,7 @@
                         'theme_location' => "aftv-header-menu",
                         'container' => 'nav',
                         'items_wrap' => '%3$s',
-                        'container_class' => 'mdl-navigation',
+                        'container_class' => 'mdl-navigation aftv-menu__principal',
                         'walker' => new AFTV_walker()
                     );
                     if (has_nav_menu('aftv-header-menu') ){

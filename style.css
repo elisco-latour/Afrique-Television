@@ -48,16 +48,30 @@ body{
     max-width: 30%;
 }
 
+/* NAVIGATION MENU */
+
 .aftv_menu{
     /*    background-color: #f44235;*/
 }
 
-.aftv_menu nav a{
-    transition: color .4s cubic-bezier(0.4, 0.0, 0.2, 1);
-    text-transform: uppercase;
+.aftv-menu__principal .current_menu:after{
+    content: "";
+    width: 100%;
+    background-color: #ffab40;
+    height: 6px;
+    display: block;
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
 
-.aftv_menu nav a:hover{
+.aftv-menu__principal a{
+    transition: color .4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.aftv-menu__principal a:hover{
    color: #424242;
 }
 
@@ -65,6 +79,10 @@ body{
     .mdl-layout__drawer-button{
 
     }
+}
+
+.mdl-layout__drawer .mdl-navigation .current_menu{
+    background-color: #E0E0E0;
 }
 
 /* ------------------
@@ -197,10 +215,6 @@ a.article-link{
     margin-bottom: 0;
 }
 
-/* NAVIGATION MENU */
-.current_menu{
-    background-color: #303030;
-}
 
 
 /* AFTV WIDGETS 1*/

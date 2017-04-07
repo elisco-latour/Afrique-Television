@@ -28,7 +28,7 @@ class AFTV_walker extends Walker_Nav_Menu {
 		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 
 		if ( in_array( 'current-menu-item', $classes ) )
-				$class_names .= ' is-active';
+				$class_names .= ' current_menu';
 
 		$class_names = $class_names ? ' class="mdl-navigation__link ' . esc_attr( $class_names ) . '"' : '';
 
