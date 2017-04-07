@@ -292,7 +292,8 @@ add_shortcode('tstsho', 'aftv_display_pageof_category');
  */
 
 // Add a class to my Menu links.
-if (!function_exists('aftv_add_menu_link_class')) {
+/*
+ * if (!function_exists('aftv_add_menu_link_class')) {
 
     $navClass = "mdl-navigation";
 
@@ -302,6 +303,7 @@ if (!function_exists('aftv_add_menu_link_class')) {
 
     add_filter('wp_nav_menu', 'aftv_add_menu_link_class');
 }
+ */
 
 
 // Display posts Captions
