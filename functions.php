@@ -266,11 +266,27 @@ function aftv_widgets_config() {
 add_action('widgets_init', 'aftv_widgets_config');
 
 
+/* ------------------------------------------------------
+ * 
+ * 6 - SHORTCODE FOR CATEGORIES CONTENT DISPLAY IN PAGES
+ * 
+ * ------------------------------------------------------
+ */
+
+
+//Include the category page function handler file
+require_once get_template_directory().'/inc/aftv-cat-page-template.php';
+
+function aftv_display_pageof_category($atts){
+    $category = (int)$atts['id'];
+    return aftv_show_catpage($category);
+}
+add_shortcode('tstsho', 'aftv_display_pageof_category');
 
 
 /* ------------------------------------------------------
  * 
- * 6 - UTILTIES
+ * 7 - UTILTIES
  * 
  * ------------------------------------------------------
  */

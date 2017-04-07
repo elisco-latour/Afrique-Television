@@ -177,6 +177,7 @@ article .aftv-cat a,
     text-decoration: none !important;
     color: #757575;
     font-weight: 300 !important;
+     text-transform: uppercase !important;
 }
 
 .aftv-category-page{
@@ -211,13 +212,16 @@ a.article-link{
     padding-right: 16px;
 }
 
-.continu-item {
+.continu-item{
     display: inline-block;
     text-decoration: none;
     color: #424242;
     padding: 0px 10px 0px 10px;
     transition: 0.3s;
     margin-bottom: 5px;
+}
+.continu-item h5, .continu-item a{
+        text-transform: uppercase !important;
 }
 
 .continu-item .aftv-cat{
