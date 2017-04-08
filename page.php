@@ -17,7 +17,7 @@
             ?>
             <div class="mdl-grid  aftv-single--page-container">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-                <article class="mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                <article id="post-<?php the_ID();?>" <?php post_class("mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col") ?>>
 
                     <div class="aftv-single--posst-content">
                         <header class="aftv-single--post-header">

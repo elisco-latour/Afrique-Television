@@ -35,7 +35,7 @@ get_header();
                     if ($une_query->have_posts()):
                         ?>
                         <?php while ($une_query->have_posts()):$une_query->the_post(); ?>
-                            <article class="mdl-card mdl-cell mdl-cell--12-col section--center mdl-shadow--2dp">
+                    <article id="post-<?php the_ID(); ?> " <?php post_class("mdl-card mdl-cell mdl-cell--12-col section--center mdl-shadow--2dp"); ?>>
                                 <div class="mdl_card_media aftv-media">
                                     <!-- <img src="artticles/000_j364c.jpg"/>-->
                                     <?php the_post_thumbnail(); ?>
@@ -74,7 +74,7 @@ get_header();
                     if ($une_suite_query->have_posts()):
                         ?>
                         <?php while ($une_suite_query->have_posts()):$une_suite_query->the_post(); ?>
-                            <article class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone"); ?>>
                                 <div class="mdl_card_media aftv-media">
                                     <!-- <img src="artticles/000_Par7634959_1_0.jpg"/>-->
                                     <?php the_post_thumbnail(); ?>
@@ -119,7 +119,7 @@ get_header();
                                 <?php while ($aftv_continu_query->have_posts()):$aftv_continu_query->the_post(); ?>
 
 
-                            <div class="miakpo">
+                            <div id="post-<?php the_ID(); ?>" <?php post_class("miakpo"); ?>>
                                 <div class="aftv-timeline__img"></div>
                                 
                                     <a class="continu-item" href="<?php the_permalink(); ?>">
@@ -158,7 +158,7 @@ get_header();
                     if ($aftv_actualite_query->have_posts()):
                         ?>
                         <?php while ($aftv_actualite_query->have_posts()):$aftv_actualite_query->the_post(); ?>
-                            <article class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <article id="post-<?php the_ID(); ?>"" <?php post_class("mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone"); ?>>
                                 <div class="mdl_card_media aftv-media">
                                     <!--<img src="artticles/000_7V2DC(1).jpg"/>-->
                                     <?php the_post_thumbnail(); ?>
@@ -211,7 +211,7 @@ get_header();
                     if ($aftv_emissions_query->have_posts()):
                         ?>
                         <?php while ($aftv_emissions_query->have_posts()):$aftv_emissions_query->the_post(); ?>
-                            <article class="mdl-shadow--2dp mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-shadow--2dp mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article"); ?>>
                                 <div class="mdl-grid">
                                     <div class="mdl-cell mdl-cell--12-col">
                                         <div class="mdl_card_media mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
@@ -269,7 +269,7 @@ get_header();
                         ?>
                         <?php while ($aftv_dossiers_query->have_posts()):$aftv_dossiers_query->the_post(); ?>
 
-                            <article class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article") ?> >
                                 <div class="mdl-grid">
                                     <div class="mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                                         <div class="mdl_card_media aftv-media mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">

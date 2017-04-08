@@ -22,7 +22,7 @@
                     </div>
                     <?php if (have_posts()): ?>
                         <?php while (have_posts()):the_post(); ?>
-                            <div class="mdl-card mdl-shadow--2dp aftv-cat--post mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-card mdl-shadow--2dp aftv-cat--post mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone"); ?>>
                                 <div class="mdl-card__media aftv-media">
                                     <!-- <img src="artticles/000_ka1se_0.jpg"/> -->
                                     <?php the_post_thumbnail(); ?>
@@ -39,7 +39,7 @@
                                         Lire l'article
                                     </a>
                                 </div>
-                            </div>
+                    </article>
                         <?php endwhile; ?>
                     <?php endif; ?>
                     <?php
