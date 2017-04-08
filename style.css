@@ -188,6 +188,22 @@ a{
 
 }
 
+.material-image__background{
+    background-color: #323232;
+    width: 100%;
+    height: 20vh;
+}
+
+.material-image__background{
+ position: relative;   
+}
+
+.material-image__background img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .aftv-logo{
     max-width: 30%;

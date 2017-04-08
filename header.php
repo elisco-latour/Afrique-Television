@@ -79,7 +79,17 @@
                 </div>
             </header>
             <div class="mdl-layout__drawer">
-                <span class="mdl-layout-title">Menu</span>
+                <span class="mdl-layout-title material-image__background">
+                                            <?php 
+                        //echo get_bloginfo('name');
+                        if( has_custom_logo() ) {
+                            the_custom_logo();
+                        }
+                        else {
+                            echo get_bloginfo('name');
+                        }
+                        ?>
+                </span>
                 <?php 
                 $aftv_drawer_menu_parameters = array(
                   'theme_location' => 'aftv-drawer-menu',
