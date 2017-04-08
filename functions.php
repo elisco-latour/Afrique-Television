@@ -89,6 +89,9 @@ if (!function_exists('aftv_theme_setup')) {
             'aftv-drawer-menu' => __('Menu latteral', 'afrique-television'),
             'aftv-legacy-menu' => __('Menu de Copyright', 'afrique-television')
         ));
+        
+        // Add feed links support
+        add_theme_support( 'automatic-feed-links' );
     }
 
     //Load Aftv theme setup after Wordpress theme setup
