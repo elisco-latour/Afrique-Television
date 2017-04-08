@@ -243,6 +243,7 @@ a{
 
 .mdl-layout__drawer .mdl-navigation__link{
     color: #303030;
+    text-transform: uppercase;
 }
 
 .mdl-layout__drawer a.mdl-navigation__link:hover{
@@ -380,6 +381,17 @@ article .aftv-cat a,
 
 .aftv-single--page__metadata{
     margin-bottom: 0;
+    position: relative;
+}
+
+.aftv-single--page__metadata:before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    background-color: #424242;
+    border-top: 1px solid #ddd;
 }
 
 a.article-link{
