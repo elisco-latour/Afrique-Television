@@ -142,6 +142,37 @@ body{
     margin-right: 8px !important;
 }
 
+.gallery-caption {
+    font-size: 9.75pt;
+    color: #686868 !important; /* Make sure color schemes don't affect to print */
+}
+
+.gallery-caption {
+	color: #686868;
+	display: block;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-style: italic;
+	line-height: 1.6153846154;
+	padding-top: 0.5384615385em;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+.sticky{
+    
+}
+
+.bypostauthor{
+    
+}
+
+
 /* ------------------
  1  - HEADER
 ------------------*/ 
