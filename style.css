@@ -177,7 +177,8 @@ body{
  1  - HEADER
 ------------------*/ 
 .aftv-prim-head{
-    background-color: #bf360c;
+    background-color: #bf360c !important;
+    opacity: 1 !important;
 }
 
 .aftv-logo-container{
@@ -191,14 +192,29 @@ body{
 
 /* NAVIGATION MENU */
 
-.aftv_menu{
-    /*    background-color: #f44235;*/
+.mdl-layout__header-row.aftv-header{
+    background-color: #9a0007
 }
+
+.mdl-layout__header .mdl-layout__drawer-button{
+    background-color: #9a0007;
+}
+
+.aftv_menu{
+   background-color: #d32f2f;
+}
+
+
+.aftv-menu__principal .current_menu{
+    color: #000000;
+    background: #fff;
+}
+
 
 .aftv-menu__principal .current_menu:after{
     content: "";
     width: 100%;
-    background-color: #ffab40;
+    background-color: #9a0007;
     height: 4px;
     display: block;
     left: 0;
@@ -360,7 +376,7 @@ a.article-link{
 
 /* AFTV WIDGETS 1*/
 .aftv-widget--1{
-    background-color: #fff;
+    background-color: #f9e3e3;
     margin-top: 16px;
     margin-bottom: 24px;
     padding-left: 16px;
@@ -520,7 +536,7 @@ article h2{
         position: relative;
         top: -1px;
         right: 10px;
-        background-color: #ffab40;
+        background-color: #f9e3e3;
         color: #212121;
         line-height: normal;
         text-transform: lowercase;
