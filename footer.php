@@ -51,7 +51,7 @@
                             ?>
                         </div>
                     </footer>
-                    <button onclick="toggle_player()" class="aftv-mobile_tv mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary">
+                    <button onclick="toggle_player()" class="aftv-mobile_tv mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary mdl-button--raised">
                         <i class="material-icons">live_tv</i>
                     </button>
                 </div>

@@ -189,7 +189,7 @@ a{
 }
 
 .material-image__background{
-    background-color: #323232;
+    background-color: #9a0007;
     width: 100%;
     height: 20vh;
 }
@@ -274,6 +274,10 @@ a{
 .mdl-layout__drawer{
     background-color: #ffffff;
 }
+/*
+.mdl-layout__obfuscator .is-visible{
+    z-index: 2 !important;
+}*/
 
 
 
@@ -626,8 +630,7 @@ article h2{
         position: fixed;
         bottom: 10px;
         right: 20px;
-        z-index: 2;
-        cursor: pointer;
+        z-index: 1;
         background-color: #ffab40 !important;
         color: #424242 !important;
     }
