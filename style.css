@@ -121,12 +121,15 @@ a img.aligncenter {
 
 
 /*
-
+ * GENERAL
 */
 
 body{
     font-family: "Roboto", sans-serif;
     background-color: #f5f5f5;
+}
+a{
+   color: #d32f2f; 
 }
 
 .aftv-content_spacer{
@@ -238,9 +241,24 @@ body{
     }
 }
 
-.mdl-layout__drawer .mdl-navigation .current_menu{
-    background-color: #E0E0E0;
+.mdl-layout__drawer .mdl-navigation__link{
+    color: #303030;
 }
+
+.mdl-layout__drawer a.mdl-navigation__link:hover{
+    background-color: #f8dede !important;
+}
+
+.mdl-layout__drawer .mdl-navigation .current_menu{
+    background-color: #f8dede;
+}
+
+
+.mdl-layout__drawer{
+    background-color: #ffffff;
+}
+
+
 
 /* ------------------
  2 - Content
@@ -350,7 +368,7 @@ article .aftv-cat a,
 .continu-item .aftv-cat a,
 .aftv-category-page .aftv-cat a{
     text-decoration: none !important;
-    color: #757575;
+    color: #d32f2f;
     font-weight: 300 !important;
      text-transform: uppercase !important;
 }
@@ -376,7 +394,7 @@ a.article-link{
 
 /* AFTV WIDGETS 1*/
 .aftv-widget--1{
-    background-color: #f9e3e3;
+    background-color: #323232;
     margin-top: 16px;
     margin-bottom: 24px;
     padding-left: 16px;
@@ -386,7 +404,7 @@ a.article-link{
 .continu-item{
     display: inline-block;
     text-decoration: none;
-    color: #424242;
+    color: #fff;
     padding: 0px 10px 0px 10px;
     transition: 0.3s;
     margin-bottom: 5px;
@@ -409,6 +427,7 @@ a.article-link{
     line-height: 1.5;
     padding: 0;
     margin: 10px 0 10px 0;
+    color: #f9e1e1;
 }
 
 .continu-item p{
@@ -416,19 +435,19 @@ a.article-link{
 }
 
 .aftv-widget--title{
-    border-bottom: 0.5px solid #ee4336;
-    color: #424242;
+    border-bottom: 0.5px solid #fff;
+    color: #fff;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .continu-item:hover{
-  color: #bf360c;
+  color: #d32f2f;
 }
 
 
 .continu-item:hover .aftv-cat{
-    background-color: #bf360c;
+    background-color: #d32f2f;
     color: #fff;
 }
 
@@ -536,7 +555,7 @@ article h2{
         position: relative;
         top: -1px;
         right: 10px;
-        background-color: #f9e3e3;
+        background-color: #ffb300;
         color: #212121;
         line-height: normal;
         text-transform: lowercase;
@@ -821,11 +840,12 @@ article h2{
 }
 
 #calendar_wrap table caption{
-    background: #ffab40;
+    background: #d32f2f;
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 1.2rem;
     text-transform: uppercase;
+    color: #fff;
 }
 
 #calendar_wrap table thead,
@@ -1008,7 +1028,7 @@ h2.screen-reader-text{
 .aftv-timeline:before {
     content: "";
     width: 2px;
-    background-color: #f44336;
+    background-color: #d32f2f;
     position: absolute;
     top: 0;
     left: 0;
@@ -1026,7 +1046,7 @@ h2.screen-reader-text{
     height: 12px;
     top: 8px;
     left: -5px;
-    background-color: #f44336;
+    background-color: #d32f2f;
     border-radius: 50%;
 }
 
