@@ -269,7 +269,7 @@ get_header();
                         ?>
                         <?php while ($aftv_dossiers_query->have_posts()):$aftv_dossiers_query->the_post(); ?>
 
-                    <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article") ?> >
+                    <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone  aftv-horizontal-group-article plus-space") ?> >
                                 <div class="mdl-grid">
                                     <div class="mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                                         <div class="mdl_card_media aftv-media mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
