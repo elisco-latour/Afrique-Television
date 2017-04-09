@@ -15,12 +15,10 @@
                 <!-- For IE9 or below. -->
                 <!-- <i class="material-icons">&#xE04B;</i> -->
                 <form action="#">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="sample1">
-                        <label class="mdl-textfield__label" for="sample1">Text...</label>
-                    </div>
                     <div class="">
-                        <input class="mdl-button mdl-button--colored mdl-button--primary mdl-js-button mdl-js-ripple-effect" type="submit" value="Rechercher sur Afrique T&eacute;l&eacute;vision"/>
+                        <a href="<?php echo home_url(); ?>" class="mdl-button mdl-button--colored mdl-button--raised mdl-button--primary mdl-js-button mdl-js-ripple-effect">
+                            <?php _e("Retourner à la page d'accueil","afrique-television"); ?>
+                        </a>
                     </div>
                 </form>
                 
