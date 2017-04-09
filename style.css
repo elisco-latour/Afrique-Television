@@ -8,6 +8,7 @@
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Version: 1.0
     Text Domain: afrique-television
+    Tags: Grid system, 12 columns, flexible content area, Cross-device
 */
 
 
@@ -88,6 +89,16 @@ a img.aligncenter {
     margin: 0;
     padding: 0 4px 5px;
 }
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
