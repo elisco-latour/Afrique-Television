@@ -328,3 +328,8 @@ require_once(get_template_directory().'/inc/aftv-custom-menu-widget.php');
 
 // Register The footer navigation menu widget
 add_action( 'widgets_init', function() { register_widget( 'AFTV_Nav_Menu_Widget' ); } );
+
+// Add content Width Feature
+if ( ! isset( $content_width ) ){
+    $content_width = 900;
+}
