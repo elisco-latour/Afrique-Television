@@ -1159,7 +1159,6 @@ text-decoration: none !important;
     display: inline-block;
     font-size: 12px;
     font-weight: normal;
-    border-top: 1px solid #cccccc;
     /*border-radius: 3px;*/
     /*color: #777 !important;*/
 /*    background: #f8f8f8;
@@ -1173,4 +1172,7 @@ text-decoration: none !important;
 .aftv-next-post__link span,
 .aftv-previous-post__link span {
     text-transform: uppercase;
+    border-bottom: 1px solid #cccccc;
+    display: block;
+    color: #424242;
 }

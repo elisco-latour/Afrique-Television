@@ -52,17 +52,61 @@
                     </div>
                 <?php endwhile; ?>
                 <section class="mdl-grid aftv-single-post__navigation">
-                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone"> 
-                        <a href="#" class="aftv-previous-post__link">
-                            <span><?php _e('Page précédente', 'afrique-television') ?></span>
-                            <p>Le titre de l'article ici, et puis on avisera bien n'est ce pas?</p>
-                        </a>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                        <?php
+                        /*
+                         * Get the previous Post
+                         */
+                        $aftv_previous_post = get_previous_post(TRUE);
+
+                        /*
+                         *  If previous post exists, we will display it
+                         */
+                        if ($aftv_previous_post):
+                            $aftv_previous_post_params = array(
+                                'posts_per_page' => 1,
+                                'include' => $aftv_previous_post->ID
+                            );
+                            $aftv_previous_post = get_posts($aftv_previous_post_params);
+                            ?>
+                            <?php
+                            foreach ($aftv_previous_post as $prev_post): setup_postdata($prev_post);
+                                ?>
+                                <a href="<?php echo $prev_post->guid ?>" class="aftv-previous-post__link">
+                                    <span><?php _e('Article précédent', 'afrique-television') ?></span>
+                                    <p><?php echo $prev_post->post_title; ?></p>
+                                </a>
+                                <?php wp_reset_postdata(); ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+
                     </div>
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                        <a href="#" class="aftv-next-post__link">
-                            <span><?php _e('Page suivante', 'afrique-television') ?></span>
-                            <p>Le titre de l'article ici, et puis on avisera bien n'est ce pas?</p>
-                        </a>
+                        <?php
+                        /*
+                         * Get the next post
+                         */
+                        $aftv_next_post = get_next_post(TRUE);
+
+                        /*
+                         * We display next post if it exists
+                         */
+                        if ($aftv_next_post):
+                            $aftv_next_post_params = array(
+                                'posts_per_page' => 1,
+                                'include' => $aftv_next_post->ID
+                            );
+                            $aftv_next_post = get_posts($aftv_next_post_params);
+                            ?>
+                            <?php foreach ($aftv_next_post as $next_post):setup_postdata($next_post); ?>
+
+                                <a href="<?php echo $next_post->guid ?>" class="aftv-next-post__link">
+                                    <span><?php _e('Article suivant', 'afrique-television') ?></span>
+                                    <p><?php echo $next_post->post_title; ?></p>
+                                </a>
+                                <?php wp_reset_postdata(); ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </div>
                 </section>
             </article>

@@ -306,13 +306,13 @@ get_header();
                 </div>
             </section>
             
-            <!-- SECTION DE PUBLICITE 2 -->
+            <!-- SECTION DE PUBLICITE 3 -->
             <section class="aftv-cat-section mdl-cell--12-col mdl-cell--hide-phone mdl-cell--hide-tablet">
                 <div class="mdl-grid">
                     
                 </div>
             </section>
-            <!-- FIN DE LA  SECTION DE PUBLICITE 2 -->
+            <!-- FIN DE LA  SECTION DE PUBLICITE 3 -->
         </div> 
         <?php
         /*
