@@ -14,9 +14,10 @@
          */
         require get_template_directory() . '/inc/web-tv-section.php';
         ?>
-        <?php while 
-            (have_posts()):the_post();
-        
+        <?php
+        while
+        (have_posts()):the_post();
+
             $aftv_page_links = array(
                 'before' => '<p>' . __('Pages:', 'afrique-television'),
                 'after' => '</p>',
@@ -29,7 +30,7 @@
                 'pagelink' => '%',
                 'echo' => 1
             );
-        ?>
+            ?>
             <div class="mdl-grid  aftv-single--page-container">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
                 <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col"); ?>>
@@ -49,14 +50,28 @@
                         </header>
                         <?php the_content(); ?>
                     </div>
-                </article>
-            
+                <?php endwhile; ?>
+                <section class="mdl-grid aftv-single-post__navigation">
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone"> 
+                        <a href="#" class="aftv-previous-post__link">
+                            <span><?php _e('Page précédente', 'afrique-television') ?></span>
+                            <p>Le titre de l'article ici, et puis on avisera bien n'est ce pas?</p>
+                        </a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                        <a href="#" class="aftv-next-post__link">
+                            <span><?php _e('Page suivante', 'afrique-television') ?></span>
+                            <p>Le titre de l'article ici, et puis on avisera bien n'est ce pas?</p>
+                        </a>
+                    </div>
+                </section>
+            </article>
+
             <?php
             // Page links configuration
 
             wp_link_pages($aftv_page_links);
             ?>
         </div>
-        <?php endwhile; ?>
         <?php get_footer(); ?>
 
