@@ -23,7 +23,9 @@
                                     <span class="aftv-post__date"><?php _e('publi&eacute; le: ','afrique-television') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
-                                    <h1 class="mdl-card__title-text"><?php the_title(); ?></h1>
+                                    <h1 class="mdl-card__title-text">
+                                        <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
+                                    </h1>
                                 </div>
                                 <p class="mdl-card_supporting-text aftv-post__excerpt">
                                     <?php echo get_the_excerpt(); ?>

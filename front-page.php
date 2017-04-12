@@ -46,7 +46,7 @@ get_header();
                                 </p>
                                 <div class="mdl-card__title">
                                     <h1 class="mdl-card__title-text ">
-                                        <?php the_title(); ?>
+                                        <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h1>
                                 </div>
                                 <p class="mdl-card__supporting-text">
@@ -85,7 +85,7 @@ get_header();
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
-                                        <?php the_title(); ?>
+                                        <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
                                 </div>
                                 <div class="mdl-card__actions">
@@ -169,7 +169,7 @@ get_header();
                                 </p>
                                 <div class="mdl-card__title">
                                     <h2 class="mdl-card__title-text">
-                                        <?php the_title(); ?>
+                                        <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
                                 </div>
 
@@ -186,9 +186,9 @@ get_header();
             </section>
             
             <!-- SECTION DE PUBLICITE 1 -->
-            <section class="aftv-cat-section mdl-cell--12-col mdl-cell--hide-phone mdl-cell--hide-tablet">
-                <div class="mdl-grid" >
-                    
+            <section class="aftv-pub-cat-section mdl-cell--12-col">
+                <div class="mdl-grid mdl-grid--no-spacing" >
+                    <?php dynamic_sidebar('sidebar-8') ?>
                 </div>
             </section>
              <!-- FIN DE LA  SECTION DE PUBLICITE 1 -->
@@ -228,7 +228,7 @@ get_header();
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class="mdl-card__title-text">
-                                                <?php the_title(); ?>
+                                                <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                                             </h2>
                                         </div>
                                         <div class="mdl-card__actions">
@@ -246,9 +246,10 @@ get_header();
             </section>
             
             <!-- SECTION DE PUBLICITE 2 -->
-            <section class="aftv-cat-section mdl-cell--12-col mdl-cell--hide-phone mdl-cell--hide-tablet">
-                <div class="mdl-grid">
-                    
+            <section class="aftv-pub-cat-section mdl-cell--12-col ">
+                <div class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                     <?php dynamic_sidebar('sidebar-9') ?>
+                     <?php dynamic_sidebar('sidebar-10') ?>
                 </div>
             </section>
             <!-- FIN DE LA  SECTION DE PUBLICITE 2 -->
@@ -283,7 +284,7 @@ get_header();
                                         </p>
                                         <div class="mdl-card__title">
                                             <h2 class=" mdl-card__title-text">
-                                                <?php the_title(); ?>
+                                                <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                                             </h2>
                                         </div>
 

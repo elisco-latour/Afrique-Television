@@ -32,7 +32,9 @@
                                     <span class="aftv-post__date"><?php _e('publi&eacute; le: ','afrique-television') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
-                                    <h1 class="mdl-card__title-text"><?php the_title(); ?></h1>
+                                    <h1 class="mdl-card__title-text">
+                                        <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
+                                    </h1>
                                 </div>
                                 <div class="mdl-card__actions mdl-card--border">
                                     <a href="<?php the_permalink(); ?>" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">

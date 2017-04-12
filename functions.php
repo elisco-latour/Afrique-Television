@@ -237,7 +237,7 @@ function aftv_widgets_config() {
         'name' => __('Full Page width Ad','afrique-television'),
         'id' => 'sidebar-8',
         'description' =>__('Put an Ad in this sidebar to make it fits the content of the page','afrique-television'),
-        'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
+        'before_widget' => '<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">',
         'after_widget' => '</div>',
         'before_title' => '',
         'after_title' => ''
@@ -248,7 +248,7 @@ function aftv_widgets_config() {
         'name' => __('Third Width content Ad','afrique-television'),
         'id' => 'sidebar-9',
         'description' => __('Put An Ad in this sidebar to make it fits the third part of the width of the page','afrique-television'),
-        'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
+        'before_widget' => '<div class="mdl-cell mdl-cell--8-col mdl-cell--8-tablet mdl-cell--4-phone">',
         'after_widget' => '</div>',
         'before_title' => '',
         'after_title' => ''
@@ -259,7 +259,7 @@ function aftv_widgets_config() {
         'name' => __('Quarter width content Ad Sidebar','afrique-television'),
         'id' => 'sidebar-10',
         'description' => __('Put An Ad in this sidebar to make it fits the Quarter part of the width of the page','afrique-television'),
-        'before_widget' => '<div class="mdl-cell mdl-cell--12-col">',
+        'before_widget' => '<div class="mdl-cell mdl-cell--4-col mdl-cell--8-col mdl-cell--4-phone">',
         'after_widget' => '</div>',
         'before_title' => '',
         'after_title' => ''
