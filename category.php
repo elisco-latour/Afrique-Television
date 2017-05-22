@@ -13,14 +13,14 @@
                 <div class="mdl-grid">
                     <?php if (have_posts()): ?>
                         <?php while (have_posts()):the_post(); ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-card  mdl-shadow--2dp aftv-cat--post mdl-cell mdl-cell--12-col"); ?>>
-                                <div class="mdl-card__media aftv-media">
+                            <article id="post-<?php the_ID(); ?>" <?php post_class("mdl-card  mdl-shadow--2dp aftv-cat--post mdl-cell mdl-cell--12-col"); ?>>
+                                <div class="mdl-card__media aftv-media ">
                                     <!-- <img src="artticles/000_ka1se_0.jpg"/> -->
                                     <?php the_post_thumbnail(); ?>
                                 </div>
                                 <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone aftv-meta-data aftv-category-page">
                                     <span class="aftv-cat"><?php the_category(' | '); ?></span>
-                                    <span class="aftv-post__date"><?php _e('publi&eacute; le: ','afrique-television') ?><?php the_time('j, F, Y'); ?></span>
+                                    <span class="aftv-post__date"><?php _e('publi&eacute; le: ', 'afrique-television') ?><?php the_time('j, F, Y'); ?></span>
                                 </p>
                                 <div class="mdl-card__title">
                                     <h1 class="mdl-card__title-text">
@@ -35,7 +35,7 @@
                                         Lire l'article
                                     </a>
                                 </div>
-                    </article>
+                            </article>
                         <?php endwhile; ?>
                     <?php endif; ?>
                     <?php
